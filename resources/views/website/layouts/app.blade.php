@@ -7,6 +7,7 @@
 <meta name="description" content="Course Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="icon" type="text/css" href="{{asset('website/logo/Asset 5.png')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('website/css/bootstrap4/bootstrap.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('website/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('website/plugins/OwlCarousel2-2.2.1/owl.carousel.css')}}">

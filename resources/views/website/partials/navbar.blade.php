@@ -5,7 +5,7 @@
 		<div class="logo_container rtl:pr-5">
 			<div class="logo">
 				<a href="{{route('home')}}">
-					<img src="{{asset('website/images/logo.png')}}" alt="">
+					<img src="{{asset('website/logo/Asset 10.png')}}" class="h-12 w-24" alt="">
 				</a>
 			</div>
 		</div>
@@ -39,6 +39,11 @@
 							{{__('website.contact')}}
 						</a>
 					</li>
+					<li class="main_nav_item {{request()->routeIs('about') ? 'p-2 ring-2 ring-yellow-200 rounded-lg':''}}">
+						<a href="{{route('about')}}">
+							{{__('website.about')}}
+						</a>
+					</li>
 					<li class="main_nav_item">
 						<div class="relative inline-block" x-data="{ langOpen: false }" @click.away="langOpen = false">
 				            <div>
@@ -69,15 +74,14 @@
 				                    {{app()->getLocale() == 'en' ? 'bg-gray-200' : ''}}"
 				                        role="menuitem" tabindex="-1" onclick="changeLang('en')"
 				                        href="{{route('lang',['locale'=>'en'])}}">
-				                        <span class="text-base leading-none">🇺🇸</span>English
+				                        English
 				                    </a>
 
 				                    <a class="flex items-center justify-between gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition font-medium
 				                    {{app()->getLocale() == 'ar' ? 'bg-gray-200' : ''}}"
 				                        role="menuitem" tabindex="-1" dir="rtl" onclick="changeLang('ar')"
 				                        href="{{route('lang',['locale'=>'ar'])}}">
-				                        <span>العربية</span>
-				                        <span class="text-base leading-none">🇸🇾</span>
+					                	العربية
 				                    </a>
 
 				                </div>
@@ -90,7 +94,7 @@
 	</div>
 	<div class="header_side d-flex flex-row justify-content-center align-items-center ltr:rounded-r-lg rtl:rounded-l-lg">
 		<img src="{{asset('website/images/phone-call.svg')}}" alt="">
-		<span>{{Setting('phone_number','+43 4566 7788 2457')}}</span>
+		<span class="">{{Setting('phone','963117875050+')}}</span>
 	</div>
 
 	<!-- Hamburger -->

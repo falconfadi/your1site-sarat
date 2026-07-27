@@ -22,6 +22,7 @@ Route::controller(HomeController::class)
     Route::get('courses','courses')->name('courses');
     Route::get('elements','elements')->name('elements');
     Route::get('news','news')->name('news');
+    Route::get('about','about')->name('about');
     Route::get('newsPost','newsPost')->name('newsPost');
     Route::get('teachers','teachers')->name('teachers');
     Route::get('contact','contact')->name('contact');

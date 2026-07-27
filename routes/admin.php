@@ -32,7 +32,8 @@ Route::middleware('auth.admin')
             ->group(function () {
                 Route::get('/', 'all')->name('all');
                 Route::post('create', 'create')->name('create');
-                Route::post('edit/{id}', 'edit')->name('edit');
+                Route::get('edit/{id}', 'edit')->name('edit');
+                Route::post('update/{id}', 'update')->name('update');
                 Route::get('delete/{id}', 'delete')->name('delete');
             });
 
@@ -43,6 +44,7 @@ Route::middleware('auth.admin')
                 Route::get('/', 'all')->name('all');
                 Route::post('create', 'create')->name('create');
                 Route::get('edit/{id}', 'edit')->name('edit');
+                Route::post('update/{id}', 'update')->name('update');
                 Route::get('delete/{id}', 'delete')->name('delete');
             });
     });

@@ -27,6 +27,11 @@ final class SettingController extends Controller
         return back()->with('success', 'created');
     }
 
+    public function edit(Request $request, int $id)
+    {
+        return back()->with('success', 'edit page');
+    }
+
     public function update(Request $request, int $id)
     {
         return back()->with('success', 'updated');

@@ -24,6 +24,10 @@ final class HomeController extends Controller
     {
         return view('website.news');
     }
+    public function about()
+    {
+        return view('website.about');
+    }
     public function newsPost()
     {
         return view('website.newsPost');

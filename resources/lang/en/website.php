@@ -6,6 +6,7 @@ return [
 	'courses' => 'Courses',
 	'contact' => 'Contact',
 	'news' => 'News',
+	'about' => 'ِAbout us',
 	'hero' => [
 		'slide_1_title' => 'Empower Your Future with <span>Education</span> Today!',
 		'slide_1_subtitle' => 'Access world-class courses designed by industry experts.',
@@ -166,5 +167,29 @@ return [
 			'tag_graduate' => 'Graduate',
 		]
 	],
+	'about_page' => [
+		'title' => 'About Us',
+		'hero_heading' => 'About Our Platform',
+		'hero_subheading' => 'Providing high-quality educational experiences to empower individuals and cultivate career-ready skills.',
+		'tagline' => 'Sarat Academy',
+		'mission_title' => 'Our Core Mission',
+		'mission_text_1' => 'We are dedicated to bridging the gap between passionate learners and world-class industry experts, delivering accessible, comprehensive training for students globally.',
+		'mission_text_2' => 'Whether you are starting a new career path, mastering digital tools, or seeking academic qualifications, our ecosystem offers flexible online and on-campus programs to help you study at your own pace.',
+		'quote' => 'Education is the ultimate catalyst for personal and professional transformation.',
+		'features_title' => 'What Sets Us Apart',
+		'feature_faculty_title' => 'Exceptional Professors',
+		'feature_faculty_desc' => 'Learn directly from award-winning industry leaders, academic pioneers, and field professional experts.',
+		'feature_flex_title' => 'Online & Indoor Courses',
+		'feature_flex_desc' => 'Study flexible, structured online remote classes from any device or engage in immersive classroom learning on campus.',
+		'feature_diploma_title' => 'Graduate Diplomas',
+		'feature_diploma_desc' => 'Earn accredited qualifications designed to accelerate your career and make you stand out to top employers.',
+		'feature_library_title' => 'Amazing Library',
+		'feature_library_desc' => 'Gain unrestricted access to thousands of educational books, premier academic journals, and modern digital assets.',
+		'feature_community_title' => 'Global Community',
+		'feature_community_desc' => 'Connect, collaborate, and network with a vibrant ecosystem of student peers and professional mentors around the world.',
+		'cta_title' => 'Take the Next Step in Your Academic Journey',
+		'cta_desc' => 'Join our global community today. Explore professional tracks ranging from core development architectures to advanced digital mastery techniques.',
+		'cta_button' => 'Explore Courses Now',
+	]
 
 ];

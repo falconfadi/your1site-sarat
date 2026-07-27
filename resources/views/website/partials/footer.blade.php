@@ -1,5 +1,5 @@
 <footer class="footer">
-	<div class="container">
+	<div class="container rtl:text-right">
 		<div class="newsletter">
 			<div class="row">
 				<div class="col">
@@ -26,17 +26,17 @@
 		</div>
 
 		<!-- Footer Content -->
-		<div class="footer_content">
+		<div class="footer_content ">
 		    <div class="row">
 		        <div class="col-lg-3 footer_col">
 		            <!-- Logo -->
-		            <div class="logo_container">
+		            <div class="logo_containerx">
 		                <div class="logo">
-		                    <img src="{{ asset('website/images/logo.png') }}" alt="Logo">
-		                    <span>{{ __('website.footer.logo_text') }}</span>
+		                    <img src="{{asset('website/logo/Asset 10.png')}}" alt="Logo" class="h-20 w-36">
+		                    {{-- <span>{{ __('website.footer.logo_text') }}</span> --}}
 		                </div>
 		            </div>
-		            <p class="footer_about_text">
+		            <p class="footer_about_textx">
 		                {{ __('website.footer.about_text') }}
 		            </p>
 		        </div>
@@ -75,19 +75,19 @@
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/placeholder.svg') }}" alt="Address Icon">
 		                        </div>
-		                        {{ __('website.footer.contact_address') }}
+		                       {{Setting('address','Damascus - Syria')}}
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
 		                        </div>
-		                        {{ __('website.footer.contact_phone') }}
+		                        {{Setting('phone','963117875050+')}}
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/envelope.svg') }}" alt="Email Icon">
 		                        </div>
-		                        {{ __('website.footer.contact_email') }}
+		                        {{Setting('email','hello@company.com')}}
 		                    </li>
 		                </ul>
 		            </div>
