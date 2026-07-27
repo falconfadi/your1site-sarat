@@ -81,7 +81,7 @@
 				                    {{app()->getLocale() == 'ar' ? 'bg-gray-200' : ''}}"
 				                        role="menuitem" tabindex="-1" dir="rtl" onclick="changeLang('ar')"
 				                        href="{{route('lang',['locale'=>'ar'])}}">
-					                	العربية
+					                	Arabic
 				                    </a>
 
 				                </div>
@@ -140,7 +140,7 @@
 						<a class="flex items-center gap-3 py-2 text-sm transition font-medium"
 	                        href="{{route('lang',['locale'=>'ar'])}}">
 	                        <span class="text-black leading-none">
-	                            <i class="bi bi-globe-europe-africa"></i> عربي
+	                            <i class="bi bi-globe-europe-africa"></i> Arabic
 	                        </span>
 	                    </a>
 					@endif
