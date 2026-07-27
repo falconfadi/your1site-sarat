@@ -77,13 +77,12 @@
 				                        English
 				                    </a>
 
-				                    <a class="flex items-center justify-between gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition font-medium
+				                    <a class="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition font-medium
 				                    {{app()->getLocale() == 'ar' ? 'bg-gray-200' : ''}}"
-				                        role="menuitem" tabindex="-1" dir="rtl" onclick="changeLang('ar')"
+				                        role="menuitem" tabindex="-1" onclick="changeLang('ar')"
 				                        href="{{route('lang',['locale'=>'ar'])}}">
-					                	Arabic
+				                        Arabic
 				                    </a>
-
 				                </div>
 				            </div>
 				        </div>
