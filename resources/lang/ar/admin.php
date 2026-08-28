@@ -9,4 +9,5 @@ return [
 	'logout' => 'خروج',
 	'dashboard' => 'الرئيسية',
 	'admins' => 'المدراء',
+	'visitorsMessages' => 'رسائل الزوار'
 ];

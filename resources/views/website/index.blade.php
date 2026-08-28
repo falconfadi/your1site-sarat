@@ -87,35 +87,38 @@
 
                 <!-- Box 1: Online Courses -->
                 <div class="col-lg-4 hero_box_col">
-                    <div class="hero_box h-24 d-flex flex-row align-items-center justify-content-start rounded-lg">
-                        <img src="{{ asset('website/images/earth-globe.svg') }}" class="svg" alt="">
-                        <div class="hero_box_content">
-                            <h2 class="hero_box_title">{{ __('website.hero.box_1_title') }}</h2>
-                            <a href="{{ route('courses') }}" class="hero_box_link">{{ __('website.hero.view_more') }}</a>
+                    <a href="{{ route('courses') }}" class="hero_box_link">
+                        <div class="hero_box h-24 d-flex flex-row align-items-center justify-content-start rounded-lg">
+                            <img src="{{ asset('website/images/earth-globe.svg') }}" class="svg" alt="">
+                            <div class="hero_box_content">
+                                <h2 class="hero_box_title">{{ __('website.hero.box_1_title') }}</h2>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Box 2: Our Library -->
                 <div class="col-lg-4 hero_box_col">
-                    <div class="hero_box h-24 d-flex flex-row align-items-center justify-content-start rounded-lg">
-                        <img src="{{ asset('website/images/books.svg') }}" class="svg" alt="">
-                        <div class="hero_box_content">
-                            <h2 class="hero_box_title">{{ __('website.hero.box_2_title') }}</h2>
-                            <a href="{{ route('news') }}" class="hero_box_link">{{ __('website.hero.view_more') }}</a>
+                    <a href="{{ route('news') }}" class="hero_box_link">
+                        <div class="hero_box h-24 d-flex flex-row align-items-center justify-content-start rounded-lg">
+                            <img src="{{ asset('website/images/books.svg') }}" class="svg" alt="">
+                            <div class="hero_box_content">
+                                <h2 class="hero_box_title">{{ __('website.hero.box_2_title') }}</h2>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Box 3: Our Teachers -->
                 <div class="col-lg-4 hero_box_col">
-                    <div class="hero_box h-24 d-flex flex-row align-items-center justify-content-start rounded-lg">
-                        <img src="{{ asset('website/images/professor.svg') }}" class="svg" alt="">
-                        <div class="hero_box_content">
-                            <h2 class="hero_box_title">{{ __('website.hero.box_3_title') }}</h2>
-                            <a href="{{ route('teachers') }}" class="hero_box_link">{{ __('website.hero.view_more') }}</a>
+                    <a href="{{ route('teachers') }}" class="hero_box_link">
+                        <div class="hero_box h-24 d-flex flex-row align-items-center justify-content-start rounded-lg">
+                            <img src="{{ asset('website/images/professor.svg') }}" class="svg" alt="">
+                            <div class="hero_box_content">
+                                <h2 class="hero_box_title">{{ __('website.hero.box_3_title') }}</h2>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
             </div>
@@ -128,8 +131,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="section_title text-center">
-                    <h1>{{ __('website.course_sec.popular_courses') }}</h1>
+                <div class="section_title text-center text-7xl">
+                    <h1 class="text-5xl">{{ __('website.course_sec.popular_courses') }}</h1>
                 </div>
             </div>
         </div>
@@ -280,12 +283,12 @@
 
 <!-- Services -->
 <div class="services page_section">
-    <div class="container">
+    <div class="container rtl:text-right">
 
         <div class="row">
             <div class="col">
-                <div class="section_title text-center">
-                    <h1>{{ __('website.services.section_title') }}</h1>
+                <div class="section_title text-center text-7xl">
+                    <h1 class="text-5xl">{{ __('website.services.section_title') }}</h1>
                 </div>
             </div>
         </div>
@@ -298,35 +301,35 @@
                     <img src="{{ asset('website/images/earth-globe.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_1_title') }}</h3>
-                <p>{{ __('website.services.service_1_desc') }}</p>
+                <p class="rtl:text-right">{{ __('website.services.service_1_desc') }}</p>
             </div>
 
             <!-- Service 2: Indoor Courses -->
-            <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+            {{-- <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
                 <div class="icon_container d-flex flex-column justify-content-end">
                     <img src="{{ asset('website/images/exam.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_2_title') }}</h3>
-                <p>{{ __('website.services.service_2_desc') }}</p>
-            </div>
+                <p class="rtl:text-right">{{ __('website.services.service_2_desc') }}</p>
+            </div>--}}
 
             <!-- Service 3: Amazing Library -->
-            <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+            {{-- <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
                 <div class="icon_container d-flex flex-column justify-content-end">
                     <img src="{{ asset('website/images/books.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_3_title') }}</h3>
-                <p>{{ __('website.services.service_3_desc') }}</p>
-            </div>
+                <p class="rtl:text-right">{{ __('website.services.service_3_desc') }}</p>
+            </div>  --}}
 
             <!-- Service 4: Exceptional Professors -->
-            <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+            {{-- <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
                 <div class="icon_container d-flex flex-column justify-content-end">
                     <img src="{{ asset('website/images/professor.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_4_title') }}</h3>
-                <p>{{ __('website.services.service_4_desc') }}</p>
-            </div>
+                <p class="rtl:text-right">{{ __('website.services.service_4_desc') }}</p>
+            </div> --}}
 
             <!-- Service 5: Top Programs -->
             <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
@@ -334,7 +337,7 @@
                     <img src="{{ asset('website/images/blackboard.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_5_title') }}</h3>
-                <p>{{ __('website.services.service_5_desc') }}</p>
+                <p class="rtl:text-right">{{ __('website.services.service_5_desc') }}</p>
             </div>
 
             <!-- Service 6: Graduate Diploma -->
@@ -343,7 +346,7 @@
                     <img src="{{ asset('website/images/mortarboard.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_6_title') }}</h3>
-                <p>{{ __('website.services.service_6_desc') }}</p>
+                <p class="rtl:text-right">{{ __('website.services.service_6_desc') }}</p>
             </div>
 
         </div>
@@ -355,11 +358,11 @@
     <div class="testimonials_background_container prlx_parent">
         <div class="testimonials_background prlx" style="background-image:url({{ asset('website/images/testimonials_background.jpg') }})"></div>
     </div>
-    <div class="container">
+    <div class="container rtl:text-right">
 
         <div class="row">
             <div class="col">
-                <div class="section_title text-center">
+                <div class="section_title text-center text-7xl">
                     <h1>{{ __('website.testimonials.title') }}</h1>
                 </div>
             </div>
@@ -429,12 +432,12 @@
 
 <!-- Events -->
 <div class="events page_section">
-    <div class="container">
+    <div class="container rtl:text-right">
 
         <div class="row">
             <div class="col">
-                <div class="section_title text-center">
-                    <h1>{{ __('website.events.section_title') }}</h1>
+                <div class="section_title text-center text-7xl">
+                    <h1 class="text-5xl">{{ __('website.events.section_title') }}</h1>
                 </div>
             </div>
         </div>

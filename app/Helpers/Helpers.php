@@ -61,7 +61,7 @@ if (! function_exists('Exists')) {
     function Exists($argument, string $name = ''): void
     {
         if ($argument) {
-            throw new Exception($name.' '.__('exists'), 400);
+            throw new Exception($name . ' ' . __('exists'), 400);
         }
     }
 }
@@ -165,7 +165,7 @@ if (! function_exists('getModelGlobal')) {
         $id = $owner_id ?? (int) request('owner_id');
         $type = $owner_type ?? request('owner_type');
         Truthy(is_null($type) || is_null($id), 'failed to retrieve model');
-        Truthy(! in_array($type, ['teacher','course']), sprintf('%s : %s', __('invalid model type'), "$type"));
+        Truthy(! in_array($type, ['teacher', 'course']), sprintf('%s : %s', __('invalid model type'), "$type"));
         $type = ucfirst($type);
         $class = "App\\Models\\{$type}";
         Truthy(! class_exists($class), sprintf('%s : %s', __('class does not exist'), "{$class}"));
@@ -186,8 +186,8 @@ if (! function_exists('getModel')) {
     }
 }
 
-if (! function_exists('Setting')) {
-    function Setting(?string $name = null, mixed $default = null)
+if (! function_exists('app_setting')) {
+    function app_setting(?string $name = null, mixed $default = null)
     {
         if ($name !== null) {
             return Setting::where('name', $name)->first()?->value ?? $default;

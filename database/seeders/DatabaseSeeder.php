@@ -31,6 +31,36 @@ final class DatabaseSeeder extends Seeder
             ],
         ]);
 
-        Setting::factory(5)->create();
+        Setting::factory()->createMany([
+            [
+                'name' => 'email',
+                'value' => 'info@sarat-sy.com',
+            ],
+            [
+                'name' => 'address',
+                'value' => 'Syria - Rif Dimashq -  Deir Atiyah',
+            ],
+            [
+                'name' => 'phone',
+                'value' => '995365317',
+            ],
+            [
+                'name' => 'landLine',
+                'value' => '117875050',
+            ],
+            [
+                'name' => 'social_whatsapp',
+                'value' => '#link_to_whatsapp',
+            ],
+            [
+                'name' => 'social_facebook',
+                'value' => '#link_to_facebook',
+            ],
+            [
+                'name' => 'social_telegram',
+                'value' => '#link_to_telegram',
+            ],
+
+        ]);
     }
 }

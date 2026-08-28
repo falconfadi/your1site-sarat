@@ -17,16 +17,19 @@ Route::get('/lang/{locale}', function ($locale) {
 })->name('lang');
 
 Route::controller(HomeController::class)
-->group(function(){
-    Route::get('/','home')->name('home');
-    Route::get('courses','courses')->name('courses');
-    Route::get('elements','elements')->name('elements');
-    Route::get('news','news')->name('news');
-    Route::get('about','about')->name('about');
-    Route::get('newsPost','newsPost')->name('newsPost');
-    Route::get('teachers','teachers')->name('teachers');
-    Route::get('contact','contact')->name('contact');
-});
+    ->group(function () {
+        Route::get('/', 'home')->name('home');
+        Route::get('courses', 'courses')->name('courses');
+        Route::get('elements', 'elements')->name('elements');
+        Route::get('news', 'news')->name('news');
+        Route::get('about', 'about')->name('about');
+        Route::get('newsPost', 'newsPost')->name('newsPost');
+        Route::get('teachers', 'teachers')->name('teachers');
+        Route::get('contact', 'contact')->name('contact');
+        Route::post('visitorMessage', 'visitorMessage')
+            ->name('visitorMessage')
+            ->middleware('throttle:1,120');
+    });
 
 Route::prefix('admin')
     ->name('admin.')

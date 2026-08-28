@@ -32,7 +32,7 @@
 		            <!-- Logo -->
 		            <div class="logo_containerx">
 		                <div class="logo">
-		                    <img src="{{asset('website/logo/Asset 10.png')}}" alt="Logo" class="h-20 w-36">
+		                    <img src="{{asset('website/logo/Asset 10.png')}}" alt="Logo" class="h-32 w-72">
 		                    {{-- <span>{{ __('website.footer.logo_text') }}</span> --}}
 		                </div>
 		            </div>
@@ -48,8 +48,6 @@
 		                    <li class="footer_list_item"><a href="{{ url('/') }}">{{ __('website.footer.menu_home') }}</a></li>
 		                    <li class="footer_list_item"><a href="{{ url('/courses') }}">{{ __('website.footer.menu_courses') }}</a></li>
 		                    <li class="footer_list_item"><a href="{{ url('/teachers') }}">{{ __('website.footer.menu_teachers') }}</a></li>
-		                    <li class="footer_list_item"><a href="{{ url('/news') }}">{{ __('website.footer.menu_news') }}</a></li>
-		                    <li class="footer_list_item"><a href="{{ url('/contact') }}">{{ __('website.footer.menu_contact') }}</a></li>
 		                </ul>
 		            </div>
 		        </div>
@@ -59,10 +57,12 @@
 		            <div class="footer_column_content">
 		                <ul>
 		                    <li class="footer_list_item"><a href="{{ url('/') }}">{{ __('website.footer.link_testimonials') }}</a></li>
-		                    <li class="footer_list_item"><a href="{{ url('/') }}">{{ __('website.footer.link_faq') }}</a></li>
+		                    <li class="footer_list_item"><a href="{{ url('/news') }}">{{ __('website.footer.menu_news') }}</a></li>
+		                    <li class="footer_list_item"><a href="{{ url('/contact') }}">{{ __('website.footer.menu_contact') }}</a></li>
+		                    {{-- <li class="footer_list_item"><a href="{{ url('/') }}">{{ __('website.footer.link_faq') }}</a></li>
 		                    <li class="footer_list_item"><a href="{{ url('/') }}">{{ __('website.footer.link_community') }}</a></li>
 		                    <li class="footer_list_item"><a href="{{ url('/') }}">{{ __('website.footer.link_gallery') }}</a></li>
-		                    <li class="footer_list_item"><a href="{{ url('/') }}">{{ __('website.footer.link_tuition') }}</a></li>
+		                    <li class="footer_list_item"><a href="{{ url('/') }}">{{ __('website.footer.link_tuition') }}</a></li> --}}
 		                </ul>
 		            </div>
 		        </div>
@@ -75,19 +75,25 @@
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/placeholder.svg') }}" alt="Address Icon">
 		                        </div>
-		                       {{Setting('address','Damascus - Syria')}}
-		                    </li>
-		                    <li class="footer_contact_item">
-		                        <div class="footer_contact_icon">
-		                            <img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
-		                        </div>
-		                        {{Setting('phone','963117875050+')}}
+		                       {{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/envelope.svg') }}" alt="Email Icon">
 		                        </div>
-		                        {{Setting('email','hello@company.com')}}
+		                        {{ app_setting('email','info@sarat-sy.com')}}
+		                    </li>
+		                    <li class="footer_contact_item">
+		                        <div class="footer_contact_icon">
+		                            <img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
+		                        </div>
+		                        +963-{{ app_setting('phone','995365317')}}
+		                    </li>
+		                    <li class="footer_contact_item">
+		                        <div class="footer_contact_icon">
+		                            <img src="{{ asset('website/images/phone-call.svg') }}" alt="Phone Icon">
+		                        </div>
+		                        +963-{{ app_setting('landLine','117875050') }}
 		                    </li>
 		                </ul>
 		            </div>
@@ -97,17 +103,32 @@
 
 
 		<!-- Footer Copyright -->
-		<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+		<div class="footer_bar flex justify-between items-center">
 			<div class="footer_copyright">
-				<span></span>
+				<span>
+					Powered By 
+					<a href="http://your1site.sy" target="_blank" rel="noopener noreferrer">
+						Your1Site
+					</a> 
+				</span>
 			</div>
-			<div class="footer_social ml-sm-auto">
+			<div class="footer_social">
 				<ul class="menu_social">
-					<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-					<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-					<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-					<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li class="menu_social_item">
+						<a href="{{ app_setting('social_whatsapp','#') }}">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</li>
+					<li class="menu_social_item">
+						<a href="{{ app_setting('social_facebook','#') }}">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</li>
+					<li class="menu_social_item">
+						<a href="{{ app_setting('social_telegram','#') }}">
+							<i class="fab fa-telegram"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>

@@ -22,6 +22,11 @@
             <i class="bi bi-shield"></i>
             <span>{{__('admin.admins')}}</span>
         </a>
+        <a class="nav-link {{ request()->routeIs('admin.visitorsMessages.*') ? 'is-active' : '' }}"
+            href="{{ route('admin.visitorsMessages.all') }}">
+            <i class="bi bi-shield"></i>
+            <span>{{__('admin.visitorsMessages')}}</span>
+        </a>
 
         <a class="nav-link {{ request()->routeIs('admin.settings.*') ? 'is-active' : '' }}"
             href="{{ route('admin.settings.all') }}">

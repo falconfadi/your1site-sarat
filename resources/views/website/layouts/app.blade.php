@@ -68,5 +68,47 @@
 <script src="{{asset('website/ar/js/custom.js')}}"></script>
 @endif
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+<!-- jQuery (Required for Toastr) -->
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> --}}
+
+<!-- Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $key => $error)
+                <script>
+                    toastr['error']({!! json_encode($error) !!}, {
+                        closeButton: true,
+                        tapToDismiss: false,
+                        timeOut: 5,
+                    });
+                </script>
+            @endforeach
+        </ul>
+    </div>
+@endif
+@if (Session::has('error'))
+    <script>
+        toastr['error']({!! json_encode(Session::get('error')) !!}, {
+            closeButton: true,
+            tapToDismiss: false,
+            timeOut: 5,
+        });
+    </script>
+@endif
+@if (Session::has('success'))
+    <script>
+        toastr['success']({!! json_encode(Session::get('success')) !!}, {
+            closeButton: true,
+            tapToDismiss: false,
+            timeOut: 5,
+        });
+    </script>
+@endif
+
 </body>
 </html>

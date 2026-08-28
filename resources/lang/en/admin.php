@@ -9,4 +9,5 @@ return [
 	'logout' => 'logout',
 	'dashboard' => 'dashboard',
 	'admins' => 'admins',
+	'visitorsMessages' => 'visitors Messages'
 ];
