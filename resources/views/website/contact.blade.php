@@ -22,7 +22,7 @@
 
 	<!-- Contact -->
 
-	<div class="contact">
+	<div class="contact pt-4">
 		<div class="container rtl:text-right">
 			<div class="row">
 				<div class="col-lg-8">
@@ -103,25 +103,25 @@
 
 						<div class="contact_info mt-1 pl-1">
 							<ul>
-								<li class="footer_contact_item">
+								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/placeholder.svg') }}" alt="Address Icon">
 									</div>
 								   {{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
 								</li>
-								<li class="footer_contact_item">
+								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/envelope.svg') }}" alt="Email Icon">
 									</div>
 									{{ app_setting('email','info@sarat-sy.com')}}
 								</li>
-								<li class="footer_contact_item">
+								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
 									</div>
 									+963-{{ app_setting('phone','995365317')}}
 								</li>
-								<li class="footer_contact_item">
+								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
 									</div>
@@ -140,7 +140,7 @@
 
 			<div class="row">
 				<div class="col">
-					<div id="google_map">
+					<div id="google_map" class="mt-4">
 						<div class="map_container">
 							<div id="map"></div>
 						</div>
@@ -160,23 +160,85 @@
 	// 5. Coordinates for Deir Atiyah, Rif Dimashq, Syria
 	const latitude = 34.0920;
 	const longitude = 36.7642;
-	const zoomLevel = 13; // Good town-level zoom detail
+	const urlParams = new URLSearchParams(window.location.search);
+	const sharedLat = parseFloat(urlParams.get('lat')) || parseFloat(latitude);
+	const sharedLng = parseFloat(urlParams.get('lng')) || parseFloat(longitude);
+	const zoomLevel = parseInt(urlParams.get('zoom')) || 13;
+	const defaultCenter = [latitude, longitude];
+	const initialCenter = (sharedLat && sharedLng) ? [sharedLat, sharedLng] : defaultCenter;
 
-	// 6. Initialize the map onto the #map div
 	const map = L.map('map').setView([latitude, longitude], zoomLevel);
 
-	// 7. Load and add OpenStreetMap tile layers to the map
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
 	}).addTo(map);
 
-	// 8. Place a map marker on Deir Atiyah
 	const marker = L.marker([latitude, longitude]).addTo(map);
 
 	// 9. Add a popup message to the marker (opens on click)
 	marker.bindPopup("<b>Deir Atiyah (دير عطية)</b><br>An-Nabek District, Rif Dimashq, Syria.")
 		  .openPopup();
+	
+	// If opened from a shared link, drop a marker on the shared spot
+	if (sharedLat && sharedLng) {
+		L.marker([sharedLat, sharedLng]).addTo(map)
+			.bindPopup("Shared Map Location").openPopup();
+	}
+
+	// 3. Create a Custom Leaflet Control for the Share Button
+	L.Control.ShareMap = L.Control.extend({
+		onAdd: function(map) {
+			const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+			const button = L.DomUtil.create('a', 'leaflet-share-btn', container);
+			button.classList = 'cursor-pointer'
+			button.innerHTML = '<i class="bi bi-share text-black font-extrabold"></i>'; 
+			button.title = "Share this map view";
+
+			// Bind click event
+			L.DomEvent.on(button, 'click', function(e) {
+				L.DomEvent.stopPropagation(e);
+				L.DomEvent.preventDefault(e);
+				shareCurrentMapView();
+			});
+
+			return container;
+		}
+	});
+
+	map.addControl(new L.Control.ShareMap({ position: 'topleft' }));
+
+	// 4. Map View Sharing Logic
+	function shareCurrentMapView() {
+		// Get the current center coordinates and zoom level from the map instance
+		const center = map.getCenter();
+		const zoom = map.getZoom();
+		
+		const lat = center.lat.toFixed(5);
+		const lng = center.lng.toFixed(5);
+
+		// Generate a shareable URL passing the map's current view parameters
+		const shareUrl = `${window.location.origin}${window.location.pathname}?lat=${lat}&lng=${lng}&zoom=${zoom}`;
+
+		// Trigger Native Web Share API (mobile/modern browsers)
+		if (navigator.share) {
+			navigator.share({
+				title: 'Shared Map View',
+				text: 'Check out this location on the map:',
+				url: shareUrl,
+			})
+			.then(() => console.log('Successful share'))
+			.catch((error) => console.log('Error sharing', error));
+		} else {
+			// Fallback: Copy link to clipboard for desktop browsers
+			navigator.clipboard.writeText(shareUrl).then(() => {
+				alert(`Map link copied to clipboard!`);
+			}).catch(() => {
+				alert(`Could not copy automatically. Link: ${shareUrl}`);
+			});
+		}
+	}
+
 </script>
 <script src="{{asset('website/js/contact_custom.js')}}"></script>
 

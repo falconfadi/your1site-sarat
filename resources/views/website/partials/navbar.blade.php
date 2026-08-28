@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="header d-flex flex-row h-18 rounded-lg z-50 ">
+<header class="header d-flex flex-row h-18 rounded-lg z-[1100] ">
 	<div class="header_content flex flex-row justify-between items-center rounded-lg">
 		<!-- Logo -->
 		<div class="logo_container rtl:pr-5">
