@@ -54,7 +54,7 @@ final class HomeController extends Controller
     {
         $data = $request->validate([
             'name' => ['required', 'string', 'max:50'],
-            'email' => ['required', 'email', 'unique:visitors_messages,email'],
+            'email' => ['required', 'email', 'unique:visitor_messages,email'],
             'message' => ['required', 'string', 'max:1000']
         ]);
         $message = VisitorMessage::create($data);

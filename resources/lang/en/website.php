@@ -4,7 +4,7 @@ return [
 	'home' => 'Home',
 	'teachers' => 'Trainers',
 	'courses' => 'Courses',
-	'contact' => 'Contact',
+	'contact' => 'Contact us',
 	'news' => 'News',
 	'about' => 'About us',
 	'hero' => [
