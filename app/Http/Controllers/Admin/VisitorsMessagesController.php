@@ -16,23 +16,15 @@ final class VisitorsMessagesController extends Controller
     {
         $messages = VisitorMessage::all();
         defer(function () use ($messages) {
-            $messages
-                ->where('status', VisitorsMessagesStatus::New->value)
-                ->update(['status' => VisitorsMessagesStatus::New->value]);
+            $messages->each(function ($message) {
+                if ($message->status == VisitorsMessagesStatus::New->value) {
+                    $message->update(['status' => VisitorsMessagesStatus::Viewed->value]);
+                }
+            });
         });
         return view('admin.visitorsMessages.all', [
             'messages' => $messages,
         ]);
-    }
-
-    public function setAsViewed(Request $request, int $id)
-    {
-        if ($id === null) {
-            return back()->with('error', 'id is not valid');
-        }
-        $message = VisitorMessage::findOrFail($id)
-            ->update(['status' => VisitorsMessagesStatus::Viewed->value]);
-        return back()->with('success', 'viewed');
     }
 
     public function delete(Request $request, int $id)

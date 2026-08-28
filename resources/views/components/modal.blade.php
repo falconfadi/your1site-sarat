@@ -1,11 +1,14 @@
 @props([
     'id' => 'modalId',
+    'color' => 'bg-green-600',
+    'icon' => 'bi-plus',
+    'text' => 'New',
 ])
 <div x-data="{ createNew: false }" class="inline-block">
     <!-- Trigger Button -->
     <button @click="createNew = true" type="button"
-        class="rounded-xl bg-green-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 transition">
-        New <i class="bi bi-plus"></i>
+        class="rounded-xl {{ $color }} px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 transition">
+        {{ $text }} <i class="bi {{ $icon }}"></i>
     </button>
 
     <!-- Modal Backdrop and Panel -->

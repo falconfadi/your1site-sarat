@@ -64,12 +64,28 @@
                                         {{ $setting->created_at->format('Y-m-d') }}
                                     </td>
                                     <td>
+                                        <x-modal id="update_setting_{{ $setting->id }}" 
+                                            color="bg-blue-600"
+                                            icon="bi-pencil"
+                                            text="">
+                                            <h3 class="text-base font-semibold leading-6 text-slate-900 dark:text-slate-100" id="modal-title mb-8">
+                                                Update {{ $setting->name }}
+                                            </h3>
+                                            <form class="space-y-5" action="{{route('admin.settings.update',['id'=>$setting->id])}}" method="POST" id="update_setting_{{ $setting->id }}">
+                                                @csrf            
+                                                <div>
+                                                    <label for="value" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 text-left rtl:text-right">
+                                                        {{ $setting->name }}
+                                                    </label>
+                                                    <div class="mt-1.5">
+                                                        <input id="value" name="value" type="value" autocomplete="value" required
+                                                            class="block w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3.5 py-2.5 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm shadow-sm transition focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </x-modal>
                                         @include('admin.partials.dropdown', [
                                             'links'=>[
-                                                'edit' => [
-                                                    'url'=>route('admin.settings.edit',['id'=>$setting->id]),
-                                                    'icon' => 'bi-pencil',
-                                                    ],
                                                 'delete' => [
                                                     'url'=>route('admin.settings.delete',['id'=>$setting->id]),
                                                     'icon' => 'bi-trash',

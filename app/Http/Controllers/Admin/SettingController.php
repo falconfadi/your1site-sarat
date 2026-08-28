@@ -34,6 +34,13 @@ final class SettingController extends Controller
 
     public function update(Request $request, int $id)
     {
+        $data = $request->validate([
+            'value' => ['required', 'string', 'max:150'],
+        ]);
+        if ($id === null) {
+            return back()->with('error', 'id is invalid');
+        }
+        Setting::findOrFail($id)->update($data);
         return back()->with('success', 'updated');
     }
 
