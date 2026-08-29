@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->text('message')->unique();
+            $table->text('message')->nullable();
             $table->tinyInteger('status')->default(VisitorsMessagesStatus::New->value);
             $table->timestamps();
         });
