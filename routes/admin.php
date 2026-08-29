@@ -50,7 +50,9 @@ Route::middleware('auth.admin')
             ->name('admins.')
             ->group(function () {
                 Route::get('/', 'all')->name('all');
-                Route::post('setAsViewed/{id}', 'setAsViewed')->name('setAsViewed');
+                Route::post('create', 'create')->name('create');
+                Route::get('edit/{id}', 'edit')->name('edit');
+                Route::post('update/{id}', 'update')->name('update');
                 Route::get('delete/{id}', 'delete')->name('delete');
             });
     });
