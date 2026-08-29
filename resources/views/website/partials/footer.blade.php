@@ -75,25 +75,36 @@
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/placeholder.svg') }}" alt="Address Icon">
 		                        </div>
-		                       {{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
+								<a href="http://www.google.com/maps?q=34.0646188,36.7465907&z=17&hl=en"
+								 target="_blank" rel="noopener noreferrer">
+									{{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
+								</a>
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/envelope.svg') }}" alt="Email Icon">
 		                        </div>
-		                        {{ app_setting('email','info@sarat-sy.com')}}
+								<a href="mailTo:{{ app_setting('email','info@sarat-sy.com') }}" target="_blank" rel="noopener noreferrer">
+									{{ app_setting('email','info@sarat-sy.com')}}
+								</a>
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
 		                        </div>
-		                        +963-{{ app_setting('phone','995365317')}}
+								<a href="tel:{{ app_setting('phone','995365317') }}" 
+									target="_blank" rel="noopener noreferrer">
+									+{{ app_setting('phone','995365317')}}
+								</a>
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/phone-call.svg') }}" alt="Phone Icon">
 		                        </div>
-		                        +963-{{ app_setting('landLine','117875050') }}
+								<a href="tel:{{ app_setting('landLine','995365317') }}" 
+									target="_blank" rel="noopener noreferrer">
+		                        +{{ app_setting('landLine','117875050') }}
+								</a>
 		                    </li>
 		                </ul>
 		            </div>
@@ -115,17 +126,37 @@
 			<div class="footer_social">
 				<ul class="menu_social">
 					<li class="menu_social_item">
-						<a href="{{ app_setting('social_whatsapp','#') }}">
-							<i class="fab fa-whatsapp"></i>
-						</a>
-					</li>
-					<li class="menu_social_item">
-						<a href="{{ app_setting('social_facebook','#') }}">
+						<a href="{{ app_setting('social_facebook','#') }}" target="_blank" rel="noopener noreferrer">
 							<i class="fab fa-facebook"></i>
 						</a>
 					</li>
 					<li class="menu_social_item">
-						<a href="{{ app_setting('social_telegram','#') }}">
+						<a href="{{ app_setting('social_instagram','#') }}" target="_blank" rel="noopener noreferrer">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="menu_social_item">
+						@php
+							if(app_setting('social_whatsapp') == 'none'){
+								$link = "https://wa.me/".app_setting('phone');
+							}else{
+								$link = app_setting('social_whatsapp');
+							}
+						@endphp
+						<a href="{{$link}}"
+						 target="_blank" rel="noopener noreferrer">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</li>					
+					<li class="menu_social_item">
+						@php
+							if(app_setting('social_telegram') == 'none'){
+								$link = "https://t.me/+".app_setting('phone');
+							}else{
+								$link = app_setting('social_telegram');
+							}
+						@endphp
+						<a href="{{$link}}" target="_blank" rel="noopener noreferrer">
 							<i class="fab fa-telegram"></i>
 						</a>
 					</li>

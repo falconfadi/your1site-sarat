@@ -107,25 +107,36 @@
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/placeholder.svg') }}" alt="Address Icon">
 									</div>
-								   {{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
+									<a href="http://www.google.com/maps?q=34.0646188,36.7465907&z=17&hl=en"
+									 target="_blank" rel="noopener noreferrer">
+										{{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
+									</a>
 								</li>
 								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/envelope.svg') }}" alt="Email Icon">
 									</div>
-									{{ app_setting('email','info@sarat-sy.com')}}
+									<a href="mailTo:{{ app_setting('email','info@sarat-sy.com') }}" target="_blank" rel="noopener noreferrer">
+										{{ app_setting('email','info@sarat-sy.com')}}
+									</a>
 								</li>
 								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
 									</div>
-									+963-{{ app_setting('phone','995365317')}}
+									<a href="tel:{{ app_setting('phone','995365317') }}" 
+										target="_blank" rel="noopener noreferrer">
+										+{{ app_setting('phone','995365317')}}
+									</a>
 								</li>
 								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
 									</div>
-									+963-{{ app_setting('landLine','117875050') }}
+									<a href="tel:{{ app_setting('landLine','995365317') }}" 
+										target="_blank" rel="noopener noreferrer">
+									+{{ app_setting('landLine','117875050') }}
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -158,12 +169,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
 	// 5. Coordinates for Deir Atiyah, Rif Dimashq, Syria
-	const latitude = 34.0920;
-	const longitude = 36.7642;
+	const latitude = 34.0646188;
+	const longitude = 36.7465907;
 	const urlParams = new URLSearchParams(window.location.search);
 	const sharedLat = parseFloat(urlParams.get('lat')) || parseFloat(latitude);
 	const sharedLng = parseFloat(urlParams.get('lng')) || parseFloat(longitude);
-	const zoomLevel = parseInt(urlParams.get('zoom')) || 13;
+	const zoomLevel = parseInt(urlParams.get('zoom')) || 17;
 	const defaultCenter = [latitude, longitude];
 	const initialCenter = (sharedLat && sharedLng) ? [sharedLat, sharedLng] : defaultCenter;
 
@@ -171,20 +182,14 @@
 
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
+		minZoom:15,
 		attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
 	}).addTo(map);
 
 	const marker = L.marker([latitude, longitude]).addTo(map);
-
-	// 9. Add a popup message to the marker (opens on click)
-	marker.bindPopup("<b>Deir Atiyah (دير عطية)</b><br>An-Nabek District, Rif Dimashq, Syria.")
+	marker.bindPopup("<b>Sarat academy (اكادمية سراة)</b><br>An-Nabek District, Rif Dimashq, Syria.")
 		  .openPopup();
 	
-	// If opened from a shared link, drop a marker on the shared spot
-	if (sharedLat && sharedLng) {
-		L.marker([sharedLat, sharedLng]).addTo(map)
-			.bindPopup("Shared Map Location").openPopup();
-	}
 
 	// 3. Create a Custom Leaflet Control for the Share Button
 	L.Control.ShareMap = L.Control.extend({

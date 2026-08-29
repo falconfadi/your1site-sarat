@@ -49,12 +49,10 @@
 		</nav>
 	</div>
 	<div class="header_side flex flex-row justify-around items-center ltr:rounded-r-lg rtl:rounded-l-lg">
-		{{-- <img src="{{asset('website/images/phone-call.svg')}}" alt="">
-		<span class="">{{app_setting('phone','963117875050+')}}</span> --}}
 		<div class="relative inline-block" x-data="{ langOpen: false }" @click.away="langOpen = false">
             <div>
                 <button @click="langOpen = !langOpen" type="button"
-                    class="flex items-center justify-between gap-x-1.5 rounded-lg px-3 py-2
+                    class="flex items-center justify-center gap-x-1.5 rounded-lg px-2 py-2
                     text-sm font-semibold transition-all focus:outline-none bg-transparent border-none"
                     aria-expanded="true" aria-haspopup="true">
                     <span class="flex justify-center items-center gap-2">
@@ -93,19 +91,39 @@
             </div>
         </div>
 		<div>
-			<ul class="flex justify-center items-center gap-6">
+			<ul class="flex justify-between items-center gap-6">
 				<li class="">
-					<a href="{{ app_setting('social_whatsapp','#') }}">
-						<i class="text-2xl text-zinc-100 hover:text-yellow-800 fab fa-whatsapp"></i>
-					</a>
-				</li>
-				<li class="">
-					<a href="{{ app_setting('social_facebook','#') }}">
+					<a href="{{ app_setting('social_facebook','#') }}" target="_blank" rel="noopener noreferrer">
 						<i class="text-2xl text-zinc-100 hover:text-yellow-800 fab fa-facebook"></i>
 					</a>
 				</li>
 				<li class="">
-					<a href="{{ app_setting('social_telegram','#') }}">
+					<a href="{{ app_setting('social_instagram','#') }}" target="_blank" rel="noopener noreferrer">
+						<i class="text-2xl text-zinc-100 hover:text-yellow-800 fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="">
+					@php
+						if(app_setting('social_whatsapp') == 'none'){
+							$link = "https://wa.me/".app_setting('phone');
+						}else{
+							$link = app_setting('social_whatsapp');
+						}
+					@endphp
+					<a href="{{$link}}"
+					 target="_blank" rel="noopener noreferrer">
+						<i class="text-2xl text-zinc-100 hover:text-yellow-800 fab fa-whatsapp"></i>
+					</a>
+				</li>					
+				<li class="">
+					@php
+						if(app_setting('social_telegram') == 'none'){
+							$link = "https://t.me/+".app_setting('phone');
+						}else{
+							$link = app_setting('social_telegram');
+						}
+					@endphp
+					<a href="{{$link}}" target="_blank" rel="noopener noreferrer">
 						<i class="text-2xl text-zinc-100 hover:text-yellow-800 fab fa-telegram"></i>
 					</a>
 				</li>

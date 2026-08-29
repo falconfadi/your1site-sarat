@@ -42,23 +42,27 @@ final class DatabaseSeeder extends Seeder
             ],
             [
                 'name' => 'phone',
-                'value' => '995365317',
+                'value' => '963995365317',
             ],
             [
                 'name' => 'landLine',
-                'value' => '117875050',
+                'value' => '963117875050',
             ],
             [
                 'name' => 'social_whatsapp',
-                'value' => '#link_to_whatsapp',
-            ],
-            [
-                'name' => 'social_facebook',
-                'value' => '#link_to_facebook',
+                'value' => 'none',
             ],
             [
                 'name' => 'social_telegram',
-                'value' => '#link_to_telegram',
+                'value' => 'none',
+            ],
+            [
+                'name' => 'social_facebook',
+                'value' => 'https://www.facebook.com/share/1cA3utMVy9/',
+            ],
+            [
+                'name' => 'social_instagram',
+                'value' => 'https://www.instagram.com/sarat_academy?igsi===MW5oczRzdnBycjczcA',
             ],
 
         ]);
