@@ -54,7 +54,7 @@ body
 	font-size: 14px;
 	font-weight: 400;
 	background: #FFFFFF;
-	color: #a5a5a5;
+	color: #918081;
 	direction:rtl;
 	text-align:right;
 	
@@ -78,7 +78,7 @@ p
 	font-size: 14px;
 	line-height: 2.29;
 	font-weight: 400;
-	color: #a5a5a5;
+	color: #918081;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -151,31 +151,31 @@ h6::selection
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 :-moz-placeholder /* older Firefox*/
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 ::-moz-placeholder /* Firefox 19+ */ 
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 } 
 :-ms-input-placeholder
 { 
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 ::input-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 .form-control
 {
@@ -374,7 +374,7 @@ section
 }
 .main_nav_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 
 /*********************************
@@ -385,7 +385,7 @@ section
 {
 	width: 279px;
 	height: 100%;
-	background: #ffb606;
+	background: #f47e52;
 }
 .header_side img
 {
@@ -427,7 +427,7 @@ section
 }
 .hamburger_container:hover i
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 
 /*********************************
@@ -505,7 +505,7 @@ section
 }
 .menu_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .menu_close_container
 {
@@ -552,7 +552,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #ffb606;
+	background: #f47e52;
 }
 
 /*********************************
@@ -590,7 +590,7 @@ section
 }
 .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .menu_container.active .menu_social_container
 {
@@ -667,7 +667,7 @@ section
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: #ffb606;
+	background: #f47e52;
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;
@@ -716,7 +716,7 @@ section
 	width: 55px;
 	height: 4px;
 	content: '';
-	background: #ffb606;
+	background: #f47e52;
 }
 
 /*********************************
@@ -766,7 +766,7 @@ section
 }
 .button_color_1
 {
-	background: #ffb606;
+	background: #f47e52;
 }
 .button_color_1 a
 {
@@ -783,11 +783,11 @@ section
 .button_line_1
 {
 	background: transparent;
-	border: solid 2px #ffb606;
+	border: solid 2px #f47e52;
 }
 .button_line_1 a
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .button_line_2
 {
@@ -862,12 +862,12 @@ section
 }
 .accordion.active
 {
-	background: #ffb606;
+	background: #f47e52;
 	color: #FFFFFF;
 }
 .accordion:active
 {
-	background: #ffb606 !important;
+	background: #f47e52 !important;
 	color: #FFFFFF;
 }
 .accordion::after
@@ -886,7 +886,7 @@ section
 	width: 62px;
 	height: 100%;
 	content: '+';
-	background: #ffb606;
+	background: #f47e52;
 	font-size: 14px;
 	color: #FFFFFF;
 	font-weight: 500;
@@ -955,7 +955,7 @@ section
 {
 	font-size: 15px;
 	font-weight: 400;
-	color: #a5a5a5;
+	color: #918081;
 	margin-top: 5px;
 }
 
@@ -1005,7 +1005,7 @@ section
 {
 	font-size: 36px;
 	font-weight: 500;
-	color: #ffb606;
+	color: #f47e52;
 	line-height: 1;
 	margin-top: 41px;
 }
@@ -1045,7 +1045,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #a5a5a5;
+	color: #918081;
 	max-width: 100%;
 	margin-bottom: 0px;
 }
@@ -1089,7 +1089,7 @@ section
 }
 .footer_social .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .footer_social .menu_social_item:last-child
 {

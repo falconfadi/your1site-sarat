@@ -73,7 +73,7 @@
 		                <ul>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
-		                            <img src="{{ asset('website/images/placeholder.svg') }}" alt="Address Icon">
+		                            <img src="{{ asset('website/images/placeholder.svg') }}" class="svg h-6 w-6" alt="Address Icon">
 		                        </div>
 								<a href="http://www.google.com/maps?q=34.0646188,36.7465907&z=17&hl=en"
 								 target="_blank" rel="noopener noreferrer">
@@ -82,7 +82,7 @@
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
-		                            <img src="{{ asset('website/images/envelope.svg') }}" alt="Email Icon">
+		                            <img src="{{ asset('website/images/envelope.svg') }}" class="svg h-6 w-6" alt="Email Icon">
 		                        </div>
 								<a href="mailTo:{{ app_setting('email','info@sarat-sy.com') }}" target="_blank" rel="noopener noreferrer">
 									{{ app_setting('email','info@sarat-sy.com')}}
@@ -90,7 +90,7 @@
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
-		                            <img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
+		                            <img src="{{ asset('website/images/smartphone.svg') }}" class="svg h-6 w-6" alt="Phone Icon">
 		                        </div>
 								<a href="tel:{{ app_setting('phone','995365317') }}" 
 									target="_blank" rel="noopener noreferrer">
@@ -99,7 +99,7 @@
 		                    </li>
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
-		                            <img src="{{ asset('website/images/phone-call.svg') }}" alt="Phone Icon">
+		                            <img src="{{ asset('website/images/phone-call.svg') }}" class="svg h-6 w-6" alt="Phone Icon">
 		                        </div>
 								<a href="tel:{{ app_setting('landLine','995365317') }}" 
 									target="_blank" rel="noopener noreferrer">
@@ -127,12 +127,12 @@
 				<ul class="menu_social">
 					<li class="menu_social_item">
 						<a href="{{ app_setting('social_facebook','#') }}" target="_blank" rel="noopener noreferrer">
-							<i class="fab fa-facebook"></i>
+							<i class=" text-2xl fab fa-facebook"></i>
 						</a>
 					</li>
 					<li class="menu_social_item">
 						<a href="{{ app_setting('social_instagram','#') }}" target="_blank" rel="noopener noreferrer">
-							<i class="fab fa-instagram"></i>
+							<i class=" text-2xl fab fa-instagram"></i>
 						</a>
 					</li>
 					<li class="menu_social_item">
@@ -145,7 +145,7 @@
 						@endphp
 						<a href="{{$link}}"
 						 target="_blank" rel="noopener noreferrer">
-							<i class="fab fa-whatsapp"></i>
+							<i class=" text-2xl fab fa-whatsapp"></i>
 						</a>
 					</li>					
 					<li class="menu_social_item">
@@ -157,7 +157,7 @@
 							}
 						@endphp
 						<a href="{{$link}}" target="_blank" rel="noopener noreferrer">
-							<i class="fab fa-telegram"></i>
+							<i class=" text-2xl fab fa-telegram"></i>
 						</a>
 					</li>
 				</ul>

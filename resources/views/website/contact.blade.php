@@ -102,7 +102,7 @@
 						</p>
 
 						<div class="contact_info mt-1 pl-1">
-							<ul>
+							{{-- <ul>
 								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/placeholder.svg') }}" alt="Address Icon">
@@ -132,6 +132,43 @@
 								<li class="footer_contact_item mb-3">
 									<div class="footer_contact_icon">
 										<img src="{{ asset('website/images/smartphone.svg') }}" alt="Phone Icon">
+									</div>
+									<a href="tel:{{ app_setting('landLine','995365317') }}" 
+										target="_blank" rel="noopener noreferrer">
+									+{{ app_setting('landLine','117875050') }}
+									</a>
+								</li>
+							</ul> --}}
+							<ul>
+								<li class="footer_contact_item mb-3">
+									<div class="footer_contact_icon">
+										<img src="{{ asset('website/images/placeholder.svg') }}" class="svg h-6 w-6" alt="Address Icon">
+									</div>
+									<a href="http://www.google.com/maps?q=34.0646188,36.7465907&z=17&hl=en"
+									 target="_blank" rel="noopener noreferrer">
+										{{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
+									</a>
+								</li>
+								<li class="footer_contact_item mb-3">
+									<div class="footer_contact_icon">
+										<img src="{{ asset('website/images/envelope.svg') }}" class="svg h-6 w-6" alt="Email Icon">
+									</div>
+									<a href="mailTo:{{ app_setting('email','info@sarat-sy.com') }}" target="_blank" rel="noopener noreferrer">
+										{{ app_setting('email','info@sarat-sy.com')}}
+									</a>
+								</li>
+								<li class="footer_contact_item mb-3">
+									<div class="footer_contact_icon">
+										<img src="{{ asset('website/images/smartphone.svg') }}" class="svg h-6 w-6" alt="Phone Icon">
+									</div>
+									<a href="tel:{{ app_setting('phone','995365317') }}" 
+										target="_blank" rel="noopener noreferrer">
+										+{{ app_setting('phone','995365317')}}
+									</a>
+								</li>
+								<li class="footer_contact_item mb-3">
+									<div class="footer_contact_icon">
+										<img src="{{ asset('website/images/phone-call.svg') }}" class="svg h-6 w-6" alt="Phone Icon">
 									</div>
 									<a href="tel:{{ app_setting('landLine','995365317') }}" 
 										target="_blank" rel="noopener noreferrer">

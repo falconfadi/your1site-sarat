@@ -56,7 +56,7 @@ body
 	font-size: 14px;
 	font-weight: 400;
 	background: #FFFFFF;
-	color: #a5a5a5;
+	color: #918081;
 	direction:rtl;
 }
 div
@@ -78,7 +78,7 @@ p
 	font-size: 14px;
 	line-height: 2.29;
 	font-weight: 400;
-	color: #a5a5a5;
+	color: #918081;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -151,31 +151,31 @@ h6::selection
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 :-moz-placeholder /* older Firefox*/
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 ::-moz-placeholder /* Firefox 19+ */ 
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 } 
 :-ms-input-placeholder
 { 
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 ::input-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 .form-control
 {
@@ -374,7 +374,7 @@ section
 }
 .main_nav_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 
 /*********************************
@@ -385,7 +385,7 @@ section
 {
 	width: 279px;
 	height: 100%;
-	background: #ffb606;
+	background: #f47e52;
 }
 .header_side img
 {
@@ -427,7 +427,7 @@ section
 }
 .hamburger_container:hover i
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 
 /*********************************
@@ -505,7 +505,7 @@ section
 }
 .menu_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .menu_close_container
 {
@@ -552,7 +552,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #ffb606;
+	background: #f47e52;
 }
 
 /*********************************
@@ -586,7 +586,7 @@ section
 }
 .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .menu_container.active .menu_social_container
 {
@@ -663,7 +663,7 @@ section
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: #ffb606;
+	background: #f47e52;
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;
@@ -717,7 +717,7 @@ section
 	width: 55px;
 	height: 4px;
 	content: '';
-	background: #ffb606;
+	background: #f47e52;
 }
 
 /*********************************
@@ -796,13 +796,13 @@ section
 }
 .card-title a:hover
 {
-	color: #a5a5a5;
+	color: #918081;
 }
 .card-text
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #a5a5a5;
+	color: #918081;
 	margin-top: -12px;
 }
 .price_box
@@ -830,13 +830,13 @@ section
 }
 .course_author_name span
 {
-	color: #a5a5a5;
+	color: #918081;
 }
 .course_price
 {
 	width: 67px;
 	height: 67px;
-	background: #ffb606;
+	background: #f47e52;
 	margin-right: auto;
 }
 .course_price span
@@ -887,14 +887,14 @@ section
 }
 .newsletter_email:focus
 {
-	outline: solid 2px #ffb606;
+	outline: solid 2px #f47e52;
 }
 .newsletter_submit_btn
 {
 	width: 164px;
 	height: 42px;
 	border: none;
-	background: #ffb606;
+	background: #f47e52;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
@@ -947,7 +947,7 @@ section
 .footer_list_item a
 {
 	font-size: 14px;
-	color: #a5a5a5;
+	color: #918081;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -956,13 +956,13 @@ section
 }
 .footer_list_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .footer_contact_item
 {
 	font-size: 14px;
 	font-weight: 400;
-	color: #a5a5a5;
+	color: #918081;
 	margin-bottom: 22px;
 }
 .footer_contact_item:last-child
@@ -997,7 +997,7 @@ section
 }
 .footer_social .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .footer_social .menu_social_item:last-child
 {

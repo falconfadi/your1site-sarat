@@ -54,7 +54,7 @@ body
 	font-size: 14px;
 	font-weight: 400;
 	background: #FFFFFF;
-	color: #a5a5a5;
+	color: #918081;
 }
 div
 {
@@ -75,7 +75,7 @@ p
 	font-size: 14px;
 	line-height: 2.29;
 	font-weight: 400;
-	color: #a5a5a5;
+	color: #918081;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -148,31 +148,31 @@ h6::selection
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 :-moz-placeholder /* older Firefox*/
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 ::-moz-placeholder /* Firefox 19+ */ 
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 } 
 :-ms-input-placeholder
 { 
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 ::input-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #a5a5a5 !important;
+	color: #918081 !important;
 }
 .form-control
 {
@@ -371,7 +371,7 @@ section
 }
 .main_nav_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 
 /*********************************
@@ -382,7 +382,7 @@ section
 {
 	width: 279px;
 	height: 100%;
-	background: #ffb606;
+	background: #f47e52;
 }
 .header_side img
 {
@@ -424,7 +424,7 @@ section
 }
 .hamburger_container:hover i
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 
 /*********************************
@@ -502,7 +502,7 @@ section
 }
 .menu_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .menu_close_container
 {
@@ -549,7 +549,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #ffb606;
+	background: #f47e52;
 }
 
 /*********************************
@@ -587,7 +587,7 @@ section
 }
 .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .menu_container.active .menu_social_container
 {
@@ -664,7 +664,7 @@ section
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: #ffb606;
+	background: #f47e52;
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;
@@ -713,7 +713,7 @@ section
 	width: 55px;
 	height: 4px;
 	content: '';
-	background: #ffb606;
+	background: #f47e52;
 }
 
 /*********************************
@@ -776,7 +776,7 @@ section
 {
 	width: 68px;
 	height: 68px;
-	background: #ffb606;
+	background: #f47e52;
 }
 .news_post_date div:first-child
 {
@@ -810,7 +810,7 @@ section
 .news_post_author a:hover,
 .news_post_comments a:hover
 {
-	color: #a5a5a5;
+	color: #918081;
 }
 .news_post_meta
 {
@@ -861,7 +861,7 @@ section
 	left: 0;
 	width: 4px;
 	height: 100%;
-	background: #ffb606;
+	background: #f47e52;
 	content: '';
 }
 .news_post_quote_text
@@ -875,7 +875,7 @@ section
 .news_post_quote_text span
 {
 	font-size: 36px;
-	color: #ffb606;
+	color: #f47e52;
 	margin-right: 2px;
 }
 
@@ -936,7 +936,7 @@ section
 }
 .comment_name a:hover
 {
-	color: #a5a5a5;
+	color: #918081;
 }
 .comment_separator
 {
@@ -952,7 +952,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #ffb606;
+	color: #f47e52;
 }
 .comment_reply_link a:hover
 {
@@ -989,7 +989,7 @@ section
 .input_field:focus
 {
 	outline: none !important;
-	border-color: #ffb606;
+	border-color: #f47e52;
 }
 .text_field
 {
@@ -1003,13 +1003,13 @@ section
 .text_field:focus
 {
 	outline: none !important;
-	border-color: #ffb606;
+	border-color: #f47e52;
 }
 .comment_send_btn
 {
 	width: 100%;
 	height: 48px;
-	background: #ffb606;
+	background: #f47e52;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1019,7 +1019,7 @@ section
 }
 .comment_send_btn:focus
 {
-	outline: solid 1px #ffb606;
+	outline: solid 1px #f47e52;
 	border: green !important;
 }
 
@@ -1063,11 +1063,11 @@ section
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #a5a5a5;
+	color: #918081;
 }
 .sidebar_list_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .latest_posts
 {
@@ -1104,7 +1104,7 @@ section
 .latest_post_author a:hover,
 .latest_post_comments a:hover
 {
-	color: #a5a5a5;
+	color: #918081;
 }
 .latest_post_meta
 {
@@ -1115,14 +1115,14 @@ section
 {
 	font-size: 12px;
 	font-weight: 500;
-	color: #a5a5a5;
+	color: #918081;
 	line-height: 1;
 }
 .latest_post_comments a
 {
 	font-size: 12px;
 	font-weight: 500;
-	color: #a5a5a5;
+	color: #918081;
 	line-height: 1;
 }
 .latest_post_meta span:nth-child(2)
@@ -1140,7 +1140,7 @@ section
 .tag
 {
 	height: 40px;
-	background: #ffb606;
+	background: #f47e52;
 	margin-right: 12px;
 	margin-bottom: 10px;
 }
@@ -1195,14 +1195,14 @@ section
 }
 .newsletter_email:focus
 {
-	outline: solid 2px #ffb606;
+	outline: solid 2px #f47e52;
 }
 .newsletter_submit_btn
 {
 	width: 164px;
 	height: 42px;
 	border: none;
-	background: #ffb606;
+	background: #f47e52;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
@@ -1255,7 +1255,7 @@ section
 .footer_list_item a
 {
 	font-size: 14px;
-	color: #a5a5a5;
+	color: #918081;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1264,13 +1264,13 @@ section
 }
 .footer_list_item a:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .footer_contact_item
 {
 	font-size: 14px;
 	font-weight: 400;
-	color: #a5a5a5;
+	color: #918081;
 	margin-bottom: 22px;
 }
 .footer_contact_item:last-child
@@ -1305,7 +1305,7 @@ section
 }
 .footer_social .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #f47e52;
 }
 .footer_social .menu_social_item:last-child
 {

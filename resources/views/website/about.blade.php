@@ -23,7 +23,7 @@
         <!-- Interactive Value Statement Section -->
         <div class="grid lg:grid-cols-12 gap-8 items-stretch mb-24">
             <!-- Strategic Narrative Block -->
-            <div class="lg:col-span-7 bg-gradient-to-r from-yellow-500 to-yellow-800 p-8 md:p-12 rounded-2xl border border-slate-800/60 shadow-xl flex flex-col justify-center">
+            <div class="lg:col-span-7 bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 md:p-12 rounded-2xl border border-slate-800/60 shadow-xl flex flex-col justify-center">
                 <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-6 flex items-center gap-3">
                     <span class="w-2 h-8 bg-sarat-secondary rounded-full"></span>
                     {{ __('website.about_page.mission_title') }}
@@ -59,31 +59,31 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Feature 1: Faculty -->
-                <div class="bg-gradient-to-r from-yellow-500 to-yellow-800 p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-primary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
+                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-primary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_faculty_title') }}</h3>
                     <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_faculty_desc') }}</p>
                 </div>
 
                 <!-- Feature 2: Flexible Modalities -->
-                <div class="bg-gradient-to-r from-yellow-500 to-yellow-800 p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-accent/50 transition-all duration-300 shadow-md hover:-translate-y-1">
+                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-accent/50 transition-all duration-300 shadow-md hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_flex_title') }}</h3>
                     <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_flex_desc') }}</p>
                 </div>
 
                 <!-- Feature 3: Accredited Pathways -->
-                <div class="bg-gradient-to-r from-yellow-500 to-yellow-800 p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-secondary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
+                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-secondary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_diploma_title') }}</h3>
                     <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_diploma_desc') }}</p>
                 </div>
 
                 <!-- Feature 4: Library -->
-                <div class="bg-gradient-to-r from-yellow-500 to-yellow-800 p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-primary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
+                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-primary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_library_title') }}</h3>
                     <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_library_desc') }}</p>
                 </div>
 
                 <!-- Feature 5: Global Community -->
-                <div class="bg-gradient-to-r from-yellow-500 to-yellow-800 p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-accent/50 transition-all duration-300 shadow-md hover:-translate-y-1">
+                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-accent/50 transition-all duration-300 shadow-md hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_community_title') }}</h3>
                     <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_community_desc') }}</p>
                 </div>
@@ -91,7 +91,7 @@
         </div> --}}
 
         {{-- vision --}}
-        <div class="relative overflow-hidden bg-gradient-to-r from-yellow-500 to-yellow-800 p-5 md:p-10 rounded-2xl text-center border border-slate-800 shadow-2xl mb-24">
+        <div class="relative overflow-hidden bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-5 md:p-10 rounded-2xl text-center border border-slate-800 shadow-2xl mb-24">
             <h2 class="text-2xl md:text-4xl font-black text-white mb-4 relative z-10">
                 {{ __('website.about_page.vision') }}
             </h2>
@@ -101,7 +101,7 @@
         </div>
         
         {{-- mission --}}
-        <div class="relative overflow-hidden bg-gradient-to-r from-yellow-500 to-yellow-800 p-5 md:p-10 rounded-2xl text-center border border-slate-800 shadow-2xl mb-24">
+        <div class="relative overflow-hidden bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-5 md:p-10 rounded-2xl text-center border border-slate-800 shadow-2xl mb-24">
             <h2 class="text-2xl md:text-4xl font-black text-white mb-4 relative z-10">
                 {{ __('website.about_page.mission') }}
             </h2>
@@ -111,7 +111,7 @@
         </div>
         
         {{-- mission --}}
-        <div class="relative overflow-hidden bg-gradient-to-r from-yellow-500 to-yellow-800 p-5 md:p-10 rounded-2xl text-center border border-slate-800 shadow-2xl mb-24">
+        <div class="relative overflow-hidden bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-5 md:p-10 rounded-2xl text-center border border-slate-800 shadow-2xl mb-24">
             <h2 class="text-2xl md:text-4xl font-black text-white mb-4 relative z-10">
                 {{ __('website.about_page.charter') }}
             </h2>
@@ -123,7 +123,7 @@
         </div>
 
         <!-- High Impact Call to Action Block -->
-        <div class="relative overflow-hidden bg-gradient-to-r from-yellow-500 to-yellow-800 p-10 md:p-16 rounded-2xl text-center border border-slate-800 shadow-2xl">
+        <div class="relative overflow-hidden bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-10 md:p-16 rounded-2xl text-center border border-slate-800 shadow-2xl">
             <!-- Neon background splash elements -->
             <div class="absolute -left-16 -top-16 w-48 h-48 bg-sarat-primary/20 rounded-full blur-2xl pointer-events-none"></div>
             <div class="absolute -right-16 -bottom-16 w-48 h-48 bg-sarat-secondary/20 rounded-full blur-2xl pointer-events-none"></div>

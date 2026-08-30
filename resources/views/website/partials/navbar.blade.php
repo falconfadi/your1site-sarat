@@ -14,33 +14,33 @@
 		<nav class="main_nav_container p-0 mx-auto rounded-lg">
 			<div class="main_nav">
 				<ul class="flex flex-row justify-around items-center gap-6">
-					<li class="text-zinc-900 text-xl font-semibold hover:text-yellow-400 {{request()->routeIs('home') ? 'p-1 ring-2 ring-yellow-200 rounded-lg':''}}">
-						<a href="{{route('home')}}" class="hover:text-yellow-400 no-underline text-current">
+					<li class="text-zinc-900 text-xl font-semibold hover:text-[#f47e52] {{request()->routeIs('home') ? 'p-1 ring-2 ring-[#f47e52] rounded-lg':''}}">
+						<a href="{{route('home')}}" class="hover:text-[#f47e52] no-underline text-current">
 							{{__('website.home')}}
 						</a>
 					</li>
-					<li class="text-zinc-900 text-xl font-semibold hover:text-yellow-400 {{request()->routeIs('teachers') ? 'p-1 ring-2 ring-yellow-200 rounded-lg':''}}">
-						<a href="{{route('teachers')}}" class="hover:text-yellow-400 no-underline text-current">
+					<li class="text-zinc-900 text-xl font-semibold hover:text-[#f47e52] {{request()->routeIs('teachers') ? 'p-1 ring-2 ring-[#f47e52] rounded-lg':''}}">
+						<a href="{{route('teachers')}}" class="hover:text-[#f47e52] no-underline text-current">
 							{{__('website.teachers')}}
 						</a>
 					</li>
-					<li class="text-zinc-900 text-xl font-semibold hover:text-yellow-400 {{request()->routeIs('courses') ? 'p-1 ring-2 ring-yellow-200 rounded-lg':''}}">
-						<a href="{{route('courses')}}" class="hover:text-yellow-400 no-underline text-current">
+					<li class="text-zinc-900 text-xl font-semibold hover:text-[#f47e52] {{request()->routeIs('courses') ? 'p-1 ring-2 ring-[#f47e52] rounded-lg':''}}">
+						<a href="{{route('courses')}}" class="hover:text-[#f47e52] no-underline text-current">
 							{{__('website.courses')}}
 						</a>
 					</li>
-					<li class="text-zinc-900 text-xl font-semibold hover:text-yellow-400 {{request()->routeIs('news') ? 'p-1 ring-2 ring-yellow-200 rounded-lg':''}}">
-						<a href="{{route('news')}}" class="hover:text-yellow-400 no-underline text-current">
+					<li class="text-zinc-900 text-xl font-semibold hover:text-[#f47e52] {{request()->routeIs('news') ? 'p-1 ring-2 ring-[#f47e52] rounded-lg':''}}">
+						<a href="{{route('news')}}" class="hover:text-[#f47e52] no-underline text-current">
 							{{__('website.news')}}
 						</a>
 					</li>
-					<li class="text-zinc-900 text-xl font-semibold hover:text-yellow-400 {{request()->routeIs('contact') ? 'p-1 ring-2 ring-yellow-200 rounded-lg':''}}">
-						<a href="{{route('contact')}}" class="hover:text-yellow-400 no-underline text-current">
+					<li class="text-zinc-900 text-xl font-semibold hover:text-[#f47e52] {{request()->routeIs('contact') ? 'p-1 ring-2 ring-[#f47e52] rounded-lg':''}}">
+						<a href="{{route('contact')}}" class="hover:text-[#f47e52] no-underline text-current">
 							{{__('website.contact')}}
 						</a>
 					</li>
-					<li class="text-zinc-900 text-xl font-semibold hover:text-yellow-400 {{request()->routeIs('about') ? 'p-1 ring-2 ring-yellow-200 rounded-lg':''}}">
-						<a href="{{route('about')}}" class="hover:text-yellow-400 no-underline text-current">
+					<li class="text-zinc-900 text-xl font-semibold hover:text-[#f47e52] {{request()->routeIs('about') ? 'p-1 ring-2 ring-[#f47e52] rounded-lg':''}}">
+						<a href="{{route('about')}}" class="hover:text-[#f47e52] no-underline text-current">
 							{{__('website.about')}}
 						</a>
 					</li>

@@ -22,8 +22,8 @@
                             {{ __('website.hero.slide_1_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('teachers')}}" class="bg-yellow-500 px-12 py-2 rounded-md flex
-                            justify-center items-center w-fit mx-auto text-white hover:bg-yellow-300">{{ __('website.hero.learn_more') }}</a>
+                            <a href="{{route('teachers')}}" class="bg-[#f47e52] px-12 py-2 rounded-md flex
+                            justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.learn_more') }}</a>
                         </div>
                     </div>
                 </div>
@@ -42,8 +42,8 @@
                             {{ __('website.hero.slide_2_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('courses')}}" class="bg-yellow-500 px-12 py-2 rounded-md flex
-                            justify-center items-center w-fit mx-auto text-white hover:bg-yellow-300">{{ __('website.hero.get_started') }}</a>
+                            <a href="{{route('courses')}}" class="bg-[#f47e52] px-12 py-2 rounded-md flex
+                            justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.get_started') }}</a>
                         </div>
                     </div>
                 </div>
@@ -62,8 +62,8 @@
                             {{ __('website.hero.slide_3_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('contact')}}" class="bg-yellow-500 px-12 py-2 rounded-md flex
-                            justify-center items-center w-fit mx-auto text-white hover:bg-yellow-300">{{ __('website.hero.contact_us') }}</a>
+                            <a href="{{route('contact')}}" class="bg-[#f47e52] px-12 py-2 rounded-md flex
+                            justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.contact_us') }}</a>
                         </div>
                     </div>
                 </div>
@@ -297,8 +297,8 @@
 
             <!-- Service 1: Online Courses -->
             <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                <div class="icon_container d-flex flex-column justify-content-end">
-                    <img src="{{ asset('website/images/earth-globe.svg') }}" alt="">
+                <div class="w-12 h-12 mb-2 flex justify-center items-center">
+                    <img class="svg" src="{{ asset('website/images/earth-globe.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_1_title') }}</h3>
                 <p class="rtl:text-right">{{ __('website.services.service_1_desc') }}</p>
@@ -306,8 +306,8 @@
 
             <!-- Service 2: Indoor Courses -->
             {{-- <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                <div class="icon_container d-flex flex-column justify-content-end">
-                    <img src="{{ asset('website/images/exam.svg') }}" alt="">
+                <div class="w-12 h-12 mb-2 flex justify-center items-center">
+                    <img class="svg" src="{{ asset('website/images/exam.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_2_title') }}</h3>
                 <p class="rtl:text-right">{{ __('website.services.service_2_desc') }}</p>
@@ -315,8 +315,8 @@
 
             <!-- Service 3: Amazing Library -->
             {{-- <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                <div class="icon_container d-flex flex-column justify-content-end">
-                    <img src="{{ asset('website/images/books.svg') }}" alt="">
+                <div class="w-12 h-12 mb-2 flex justify-center items-center">
+                    <img class="svg" src="{{ asset('website/images/books.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_3_title') }}</h3>
                 <p class="rtl:text-right">{{ __('website.services.service_3_desc') }}</p>
@@ -324,8 +324,8 @@
 
             <!-- Service 4: Exceptional Professors -->
             {{-- <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                <div class="icon_container d-flex flex-column justify-content-end">
-                    <img src="{{ asset('website/images/professor.svg') }}" alt="">
+                <div class="w-12 h-12 mb-2 flex justify-center items-center">
+                    <img class="svg" src="{{ asset('website/images/professor.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_4_title') }}</h3>
                 <p class="rtl:text-right">{{ __('website.services.service_4_desc') }}</p>
@@ -333,8 +333,8 @@
 
             <!-- Service 5: Top Programs -->
             <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                <div class="icon_container d-flex flex-column justify-content-end">
-                    <img src="{{ asset('website/images/blackboard.svg') }}" alt="">
+                <div class="w-12 h-12 mb-2 flex justify-center items-center">
+                    <img class="svg" src="{{ asset('website/images/blackboard.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_5_title') }}</h3>
                 <p class="rtl:text-right">{{ __('website.services.service_5_desc') }}</p>
@@ -342,8 +342,8 @@
 
             <!-- Service 6: Graduate Diploma -->
             <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                <div class="icon_container d-flex flex-column justify-content-end">
-                    <img src="{{ asset('website/images/mortarboard.svg') }}" alt="">
+                <div class="w-12 h-12 mb-2 flex justify-center items-center">
+                    <img class="svg" src="{{ asset('website/images/mortarboard.svg') }}" alt="">
                 </div>
                 <h3>{{ __('website.services.service_6_title') }}</h3>
                 <p class="rtl:text-right">{{ __('website.services.service_6_desc') }}</p>

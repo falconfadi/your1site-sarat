@@ -181,7 +181,7 @@
 							<img src="{{ asset('website/images/milestone_1.svg') }}" alt="Students Icon">
 						</div>
 						<div class="milestone_counter" data-end-value="250">0</div>
-						<div class="milestone_text group-hover:text-yellow-500">
+						<div class="milestone_text group-hover:text-[#f47e52]">
 							{{ __('website.milestones.current_students') }}
 						</div>
 					</div>
@@ -194,7 +194,7 @@
 							<img src="{{ asset('website/images/milestone_2.svg') }}" alt="Teachers Icon">
 						</div>
 						<div class="milestone_counter" data-end-value="25">0</div>
-						<div class="milestone_text group-hover:text-yellow-500">
+						<div class="milestone_text group-hover:text-[#f47e52]">
 							{{ __('website.milestones.certified_teachers') }}
 						</div>
 					</div>
@@ -207,7 +207,7 @@
 							<img src="{{ asset('website/images/milestone_3.svg') }}" alt="Courses Icon">
 						</div>
 						<div class="milestone_counter" data-end-value="19">0</div>
-						<div class="milestone_text group-hover:text-yellow-500">
+						<div class="milestone_text group-hover:text-[#f47e52]">
 							{{ __('website.milestones.approved_courses') }}
 						</div>
 					</div>
@@ -220,7 +220,7 @@
 							<img src="{{ asset('website/images/milestone_4.svg') }}" alt="Graduates Icon">
 						</div>
 						<div class="milestone_counter" data-end-value="500" data-sign-before="+">0</div>
-						<div class="milestone_text group-hover:text-yellow-500">
+						<div class="milestone_text group-hover:text-[#f47e52]">
 							{{ __('website.milestones.graduate_students') }}
 						</div>
 					</div>
