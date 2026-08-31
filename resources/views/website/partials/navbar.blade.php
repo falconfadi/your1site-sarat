@@ -3,9 +3,9 @@
 	<div class="header_content flex flex-row justify-between items-center rounded-lg">
 		<!-- Logo -->
 		<div class="logo_container rtl:pr-5">
-			<div class="logo">
+			<div class="logos">
 				<a href="{{route('home')}}">
-					<img src="{{asset('website/logo/Asset 10.png')}}" class="h-24 w-48" alt="">
+					<img src="{{asset('website/logo/Asset 10.png')}}" class="w-32 md:w-48"  alt="">
 				</a>
 			</div>
 		</div>
@@ -48,50 +48,52 @@
 			</div>
 		</nav>
 	</div>
-	<div class="header_side flex flex-row justify-around items-center ltr:rounded-r-lg rtl:rounded-l-lg">
-		<div class="relative inline-block" x-data="{ langOpen: false }" @click.away="langOpen = false">
-            <div>
-                <button @click="langOpen = !langOpen" type="button"
-                    class="flex items-center justify-center gap-x-1.5 rounded-lg px-2 py-2
-                    text-sm font-semibold transition-all focus:outline-none bg-transparent border-none"
-                    aria-expanded="true" aria-haspopup="true">
-                    <span class="flex justify-center items-center gap-2">
-                        <span class="leading-none">
-                            <i class="text-2xl text-zinc-100 hover:text-yellow-800 bi bi-globe-europe-africa"></i>
-                        </span>
-                    </span>
-                </button>
-            </div>
-
-            <!-- Dropdown Panel -->
-            <div x-show="langOpen"
-                x-transition:enter="transition ease-out duration-100"
-                x-transition:enter-start="transform opacity-0 scale-95"
-                x-transition:enter-end="transform opacity-100 scale-100"
-                x-transition:leave="transition ease-in duration-75"
-                x-transition:leave-start="transform opacity-100 scale-100"
-                x-transition:leave-end="transform opacity-0 scale-95"
-                class="absolute right-0 rtl:right-auto rtl:left-0 z-50 mt-2 w-48 origin-top-right rtl:origin-top-left rounded-2xl bg-white dark:bg-slate-900 shadow-xl shadow-slate-200/50 dark:shadow-slate-950/40 border border-slate-100 dark:border-slate-700 ring-1 ring-black ring-opacity-5 focus:outline-none overflow-hidden"
-                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                <div class="py-1" role="none">
-                    <a class="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition font-medium
-                    {{app()->getLocale() == 'en' ? 'bg-gray-200' : ''}}"
-                        role="menuitem" tabindex="-1" onclick="changeLang('en')"
-                        href="{{route('lang',['locale'=>'en'])}}">
-                        English
-                    </a>
-
-                    <a class="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition font-medium
-                    {{app()->getLocale() == 'ar' ? 'bg-gray-200' : ''}}"
-                        role="menuitem" tabindex="-1" onclick="changeLang('ar')"
-                        href="{{route('lang',['locale'=>'ar'])}}">
-                        Arabic
-                    </a>
-                </div>
-            </div>
-        </div>
+	<div class="header_side flex justify-cener items-center ltr:rounded-r-lg rtl:rounded-l-lg">
 		<div>
 			<ul class="flex justify-between items-center gap-6">
+				<li>
+					<div class="relative inline-block" x-data="{ langOpen: false }" @click.away="langOpen = false">
+						<div>
+							<button @click="langOpen = !langOpen" type="button"
+								class="flex items-center justify-center gap-x-1.5 rounded-lg px-2 py-2
+								text-sm font-semibold transition-all focus:outline-none bg-transparent border-none"
+								aria-expanded="true" aria-haspopup="true">
+								<span class="flex justify-center items-center gap-2">
+									<span class="leading-none">
+										<i class="text-2xl text-zinc-100 hover:text-yellow-800 bi bi-globe-europe-africa"></i>
+									</span>
+								</span>
+							</button>
+						</div>
+			
+						<!-- Dropdown Panel -->
+						<div x-show="langOpen"
+							x-transition:enter="transition ease-out duration-100"
+							x-transition:enter-start="transform opacity-0 scale-95"
+							x-transition:enter-end="transform opacity-100 scale-100"
+							x-transition:leave="transition ease-in duration-75"
+							x-transition:leave-start="transform opacity-100 scale-100"
+							x-transition:leave-end="transform opacity-0 scale-95"
+							class="absolute right-0 rtl:right-auto rtl:left-0 z-50 mt-2 w-48 origin-top-right rtl:origin-top-left rounded-2xl bg-white dark:bg-slate-900 shadow-xl shadow-slate-200/50 dark:shadow-slate-950/40 border border-slate-100 dark:border-slate-700 ring-1 ring-black ring-opacity-5 focus:outline-none overflow-hidden"
+							role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+							<div class="py-1" role="none">
+								<a class="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition font-medium
+								{{app()->getLocale() == 'en' ? 'bg-gray-200' : ''}}"
+									role="menuitem" tabindex="-1" onclick="changeLang('en')"
+									href="{{route('lang',['locale'=>'en'])}}">
+									English
+								</a>
+			
+								<a class="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition font-medium
+								{{app()->getLocale() == 'ar' ? 'bg-gray-200' : ''}}"
+									role="menuitem" tabindex="-1" onclick="changeLang('ar')"
+									href="{{route('lang',['locale'=>'ar'])}}">
+									Arabic
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
 				<li class="">
 					<a href="{{ app_setting('social_facebook','#') }}" target="_blank" rel="noopener noreferrer">
 						<i class="text-2xl text-zinc-100 hover:text-yellow-800 fab fa-facebook"></i>
@@ -138,13 +140,13 @@
 </header>
 
 <!-- Menu -->
-<div class="menu_container menu_mm z-[60] rtl:text-right">
+<div class="menu_container menu_mm z-[1160] rtl:text-right">
 
 	<!-- Menu Close Button -->
 	<div class="flex justify-between items-center mt-4 px-8">
 		<div class="">
 			<a href="{{route('home')}}">
-				<img src="{{asset('website/images/logo.png')}}" alt="">
+				<img src="{{asset('website/logo/Asset 10.png')}}" class="w-32" alt="">
 			</a>
 		</div>
 
@@ -161,7 +163,7 @@
 				<li class="menu_item menu_mm"><a href="{{route('courses')}}">{{__('website.courses')}}</a></li>
 				<li class="menu_item menu_mm"><a href="{{route('news')}}">{{__('website.news')}}</a></li>
 				<li class="menu_item menu_mm"><a href="{{route('contact')}}">{{__('website.contact')}}</a></li>
-
+				
 				<li class="menu_item menu_mm">
 					@if(app()->getLocale() == 'ar')
 						<a class="flex items-center gap-3 py-2 text-sm transition font-medium"
@@ -185,11 +187,41 @@
 
 			<div class="menu_social_container menu_mm">
 				<ul class="menu_social menu_mm">
-					<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-					<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-					<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-					<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li class="menu_social_item menu_mm">
+						<a href="{{ app_setting('social_facebook','#') }}" target="_blank" rel="noopener noreferrer">
+							<i class=" text-2xl fab fa-facebook"></i>
+						</a>
+					</li>
+					<li class="menu_social_item menu_mm">
+						<a href="{{ app_setting('social_instagram','#') }}" target="_blank" rel="noopener noreferrer">
+							<i class=" text-2xl fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="menu_social_item menu_mm">
+						@php
+							if(app_setting('social_whatsapp') == 'none'){
+								$link = "https://wa.me/".app_setting('phone');
+							}else{
+								$link = app_setting('social_whatsapp');
+							}
+						@endphp
+						<a href="{{$link}}"
+							target="_blank" rel="noopener noreferrer">
+							<i class=" text-2xl fab fa-whatsapp"></i>
+						</a>
+					</li>					
+					<li class="menu_social_item menu_mm">
+						@php
+							if(app_setting('social_telegram') == 'none'){
+								$link = "https://t.me/+".app_setting('phone');
+							}else{
+								$link = app_setting('social_telegram');
+							}
+						@endphp
+						<a href="{{$link}}" target="_blank" rel="noopener noreferrer">
+							<i class=" text-2xl fab fa-telegram"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 
