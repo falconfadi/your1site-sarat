@@ -31,7 +31,7 @@
 		        <div class="col-lg-3 footer_col">
 		            <!-- Logo -->
 		            <div class="logo_containerx">
-		                <div class="logo">
+		                <div class="logox">
 		                    <img src="{{asset('website/logo/Asset 10.png')}}" alt="Logo" class="h-32 w-72">
 		                    {{-- <span>{{ __('website.footer.logo_text') }}</span> --}}
 		                </div>
