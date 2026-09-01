@@ -118,7 +118,7 @@
 			<div class="footer_copyright">
 				<span>
 					Powered By 
-					<a href="http://your1site.sy" target="_blank" rel="noopener noreferrer">
+					<a href="https://your1site.com" target="_blank" rel="noopener noreferrer">
 						Your1Site
 					</a> 
 				</span>
