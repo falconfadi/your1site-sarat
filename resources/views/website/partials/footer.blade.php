@@ -114,7 +114,7 @@
 
 
 		<!-- Footer Copyright -->
-		<div class="footer_bar flex justify-between items-center">
+		<div class="footer_barx py-2 px-1 flex flex-col md:flex-row md:justify-between items-center">
 			<div class="footer_copyright">
 				<span>
 					Powered By 
