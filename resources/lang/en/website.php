@@ -11,7 +11,7 @@ return [
 		'slide_1_title' => 'Empower Your Future with <span>Education</span> Today!',
 		'slide_1_subtitle' => 'Access world-class courses designed by industry experts.',
 		'slide_2_title' => 'Learn New <span>Skills</span>, Advance Your Career',
-		'slide_2_subtitle' => 'Study at your own pace with our flexible online programs.',
+		'slide_2_subtitle' => 'Study at your own pace with our flexible programs.',
 		'slide_3_title' => 'Join a Global <span>Community</span> of Learners',
 		'slide_3_subtitle' => 'Connect with mentors and peers from all around the world.',
 		'learn_more' => 'Learn More',
