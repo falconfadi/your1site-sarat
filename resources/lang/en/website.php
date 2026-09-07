@@ -76,7 +76,7 @@ return [
 		'link_gallery' => 'Campus Pictures',
 		'link_tuition' => 'Tuitions',
 		'contact_title' => 'Contact',
-		'subscribe_to_news_letter' => 'Subscribe To News Letter',
+		'subscribe_to_news_letter' => 'Subscribe to join the leaders',
 		'subscribe' => 'Subscribe',
 	],
 	'course_sec' => [
