@@ -15,10 +15,10 @@
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="my-12 text-pretty text-4xl text-white font-bold">
+                        class="my-12 text-pretty  text-white font-bold">
                             {!! __('website.hero.slide_1_title') !!}
                         </h1>
-                        <p class="my-12 mt-4 hero_subtitlex text-3xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        <p class="my-12 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_1_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
@@ -35,10 +35,10 @@
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="my-12 text-pretty text-4xl text-white font-bold">
+                        class="my-12 text-pretty  text-white font-bold">
                             {!! __('website.hero.slide_2_title') !!}
                         </h1>
-                        <p class="my-12 mt-4 hero_subtitlex text-3xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        <p class="my-12 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_2_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
@@ -55,10 +55,10 @@
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="my-12 text-pretty text-4xl text-white font-bold">
+                        class="my-12 text-pretty  text-white font-bold">
                             {!! __('website.hero.slide_3_title') !!}
                         </h1>
-                        <p class="my-12 mt-4 hero_subtitlex text-3xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        <p class="my-12 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_3_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
