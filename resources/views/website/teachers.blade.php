@@ -237,9 +237,9 @@
 
 				<div class="col-lg-6 order-2 order-lg-1 rtl:text-right">
 					<div class="become_title">
-						<h1>{{ __('website.become_teacher.title') }}</h1>
+						<h1 class="text-3xl font-semibold">{{ __('website.become_teacher.title') }}</h1>
 					</div>
-					<p class="become_text">
+					<p class="become_text text-xl">
 						{{ __('website.become_teacher.text') }}
 					</p>
 					<div class="become_button text-center trans_200">
@@ -249,7 +249,8 @@
 
 				<div class="col-lg-6 order-1 order-lg-2">
 					<div class="become_image">
-						<img src="{{ asset('website/images/become.jpg') }}" alt="Become an Instructor">
+						{{-- <img src="{{ asset('website/images/become.jpg') }}" alt="Become an Instructor"> --}}
+						<img src="{{ asset('website/images/course_2.jpg') }}" alt="Become an Instructor">
 					</div>
 				</div>
 

@@ -35,7 +35,7 @@ return [
 	],
 	'services' => [
 		'section_title' => 'Our Services',
-		'service_1_title' => 'Online Courses',
+		'service_1_title' => 'Training Courses',
 		'service_1_desc' => 'Study flexible, structured classes at your will.',
 		'service_2_title' => 'Indoor Courses',
 		'service_2_desc' => 'Engage in immersive, traditional classroom learning experiences on campus.',
@@ -80,7 +80,7 @@ return [
 		'subscribe' => 'Subscribe',
 	],
 	'course_sec' => [
-		'popular_courses' => 'Popular Courses',
+		'popular_courses' => 'Available Courses',
 		'author' => 'Author',
 		'design_title' => 'The Complete Guide to Professional Design',
 		'design_desc' => 'Master Adobe tools, advanced layering, and smart objects.',

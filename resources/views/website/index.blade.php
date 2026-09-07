@@ -15,14 +15,14 @@
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="text-pretty text-5xl text-white font-bold">
+                        class="my-12 text-pretty text-4xl text-white font-bold">
                             {!! __('website.hero.slide_1_title') !!}
                         </h1>
-                        <p class="mt-4 hero_subtitlex text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        <p class="my-12 mt-4 hero_subtitlex text-3xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_1_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('teachers')}}" class="bg-[#f47e52] px-12 py-2 rounded-md flex
+                            <a href="{{route('teachers')}}" class="bg-[#f47e52] px-12 py-3 rounded-md flex text-3xl
                             justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.learn_more') }}</a>
                         </div>
                     </div>
@@ -35,14 +35,14 @@
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="text-pretty text-5xl text-white font-bold">
+                        class="my-12 text-pretty text-4xl text-white font-bold">
                             {!! __('website.hero.slide_2_title') !!}
                         </h1>
-                        <p class="mt-4 hero_subtitlex text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        <p class="my-12 mt-4 hero_subtitlex text-3xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_2_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('courses')}}" class="bg-[#f47e52] px-12 py-2 rounded-md flex
+                            <a href="{{route('courses')}}" class="bg-[#f47e52] px-12 py-3 rounded-md flex text-3xl
                             justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.get_started') }}</a>
                         </div>
                     </div>
@@ -55,14 +55,14 @@
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="text-pretty text-5xl text-white font-bold">
+                        class="my-12 text-pretty text-4xl text-white font-bold">
                             {!! __('website.hero.slide_3_title') !!}
                         </h1>
-                        <p class="mt-4 hero_subtitlex text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        <p class="my-12 mt-4 hero_subtitlex text-3xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_3_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('contact')}}" class="bg-[#f47e52] px-12 py-2 rounded-md flex
+                            <a href="{{route('contact')}}" class="bg-[#f47e52] px-12 py-3 rounded-md flex text-3xl
                             justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.contact_us') }}</a>
                         </div>
                     </div>

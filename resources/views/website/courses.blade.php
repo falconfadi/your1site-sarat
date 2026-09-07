@@ -14,7 +14,7 @@
 			<div class="home_background prlx" style="background-image:url({{asset('website/images/courses_background.jpg')}})"></div>
 		</div>
 		<div class="home_content">
-			<h1>{{__('website.courses')}}</h1>
+			<h1 class="">{{__('website.courses')}}</h1>
 		</div>
 	</div>
 
@@ -25,7 +25,7 @@
 			<div class="row">
 	            <div class="col">
 	                <div class="section_title text-center">
-	                    <h1>{{ __('website.course_sec.popular_courses') }}</h1>
+	                    <h1 class="text-5xl font-semibold">{{ __('website.course_sec.popular_courses') }}</h1>
 	                </div>
 	            </div>
 	        </div>
