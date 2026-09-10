@@ -71,12 +71,12 @@
 
         </div>
 
-        <div class="hero_slider_left hero_slider_nav trans_200 rounded-full">
+        {{-- <div class="hero_slider_left hero_slider_nav trans_200 rounded-full">
             <i class="bi bi-arrow-left text-3xl text-black"></i>
         </div>
         <div class="hero_slider_right hero_slider_nav trans_200 rounded-full">
             <i class="bi bi-arrow-right text-3xl text-black"></i>
-        </div>
+        </div> --}}
     </div>
 </div>
 
