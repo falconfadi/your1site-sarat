@@ -25,13 +25,13 @@
             <!-- Strategic Narrative Block -->
             <div class="lg:col-span-7 bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 md:p-12 rounded-2xl border border-slate-800/60 shadow-xl flex flex-col justify-center">
                 <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-6 flex items-center gap-3">
-                    <span class="w-2 h-8 bg-sarat-secondary rounded-full"></span>
+                    <span class="w-1 h-8 bg-white rounded-full"></span>
                     {{ __('website.about_page.mission_title') }}
                 </h2>
-                <p class="text-slate-100 leading-relaxed text-base mb-4">
+                <p class="text-slate-100 leading-relaxed text-lg mb-2">
                     {{ __('website.about_page.mission_text_1') }}
                 </p>
-                <p class="text-slate-200 leading-relaxed text-sm">
+                <p class="text-slate-200 leading-relaxed text-lg">
                     {{ __('website.about_page.mission_text_2') }}
                 </p>
             </div>
@@ -48,54 +48,12 @@
             </div>
         </div>
 
-        <!-- Sarat Grid Features Grid Architecture -->
-        {{-- <div class="mb-24">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-black text-black mb-4">
-                    {{ __('website.about_page.features_title') }}
-                </h2>
-                <div class="h-1 w-20 bg-gradient-to-r from-sarat-primary to-sarat-secondary mx-auto rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Feature 1: Faculty -->
-                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-primary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_faculty_title') }}</h3>
-                    <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_faculty_desc') }}</p>
-                </div>
-
-                <!-- Feature 2: Flexible Modalities -->
-                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-accent/50 transition-all duration-300 shadow-md hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_flex_title') }}</h3>
-                    <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_flex_desc') }}</p>
-                </div>
-
-                <!-- Feature 3: Accredited Pathways -->
-                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-secondary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_diploma_title') }}</h3>
-                    <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_diploma_desc') }}</p>
-                </div>
-
-                <!-- Feature 4: Library -->
-                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-primary/50 transition-all duration-300 shadow-md hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_library_title') }}</h3>
-                    <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_library_desc') }}</p>
-                </div>
-
-                <!-- Feature 5: Global Community -->
-                <div class="bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 rounded-2xl border border-slate-800/80 hover:border-sarat-accent/50 transition-all duration-300 shadow-md hover:-translate-y-1">
-                    <h3 class="text-xl font-bold text-white mb-3">{{ __('website.about_page.feature_community_title') }}</h3>
-                    <p class="text-slate-100 text-sm leading-relaxed">{{ __('website.about_page.feature_community_desc') }}</p>
-                </div>
-            </div>
-        </div> --}}
-
         {{-- vision --}}
         <div class="relative overflow-hidden bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-5 md:p-10 rounded-2xl text-center border border-slate-800 shadow-2xl mb-24">
             <h2 class="text-2xl md:text-4xl font-black text-white mb-4 relative z-10">
                 {{ __('website.about_page.vision') }}
             </h2>
-            <p class="text-slate-100 max-w-xl mx-auto mb-8 relative z-10 text-sm md:text-base">
+            <p class="text-slate-100 max-w-xl mx-auto mb-8 relative z-10 text-2xl md:text-pretty">
                 {{ __('website.about_page.vision_desc') }}
             </p>
         </div>
@@ -105,18 +63,18 @@
             <h2 class="text-2xl md:text-4xl font-black text-white mb-4 relative z-10">
                 {{ __('website.about_page.mission') }}
             </h2>
-            <p class="text-slate-100 max-w-xl mx-auto mb-8 relative z-10 text-sm md:text-base">
+            <p class="text-slate-100 max-w-xl mx-auto mb-8 relative z-10 text-2xl md:text-pretty">
                 {{ __('website.about_page.mission_desc') }}
             </p>
         </div>
         
-        {{-- mission --}}
+        {{-- charter --}}
         <div class="relative overflow-hidden bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-5 md:p-10 rounded-2xl text-center border border-slate-800 shadow-2xl mb-24">
             <h2 class="text-2xl md:text-4xl font-black text-white mb-4 relative z-10">
                 {{ __('website.about_page.charter') }}
             </h2>
             @for($i=0;$i<=5;$i++)
-                <p class="text-slate-100 max-w-xl mx-auto mb-8 relative z-10 text-sm md:text-base">
+                <p class="text-slate-100 max-w-xl mx-auto mb-8 relative z-10 text-2xl md:text-pretty">
                     {{ __("website.about_page.charter_desc.{$i}") }}
                 </p>
             @endfor

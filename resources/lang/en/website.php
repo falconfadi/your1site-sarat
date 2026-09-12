@@ -191,9 +191,9 @@ return [
 		'cta_desc' => 'Join our global community today. Explore professional tracks ranging from core development architectures to advanced digital mastery techniques.',
 		'cta_button' => 'Explore Courses Now',
 		'vision' => 'Our Vision',
-		'vision_desc' => 'We work to prepare young leaders and develop their skills to achieve growth and advancement in our society. We especially focus on our honorable students to develop their skills and empower them to be leaders in their respective fields.',
+		'vision_desc' => 'With the efforts of an outstanding team and professional trainers, we work on training 10,000 people annually to develop their skills, which brings growth and progress to our community, especially our dear students, to empower them to become effective leaders in their different fields.',
 		'mission' => 'Our Mission',
-		'mission_desc' => 'Advancing society by preparing at least 300 male and female students annually to become leaders in their fields.',
+		'mission_desc' => 'Preparing an effective, ethical leader generation in various fields, capable of positive change.',
 		'charter' => 'Our Team Work Charter',
 		'charter_desc' => [
 			'We work with sincerity, honesty, and diligence.',
