@@ -103,8 +103,8 @@ $(document).ready(function()
 				loop:true,
 				smartSpeed:800,
 				autoplay:false,
-				nav:true,
-				dots:true
+				nav:false,
+				dots:false
 			});
 
 			// add animate.css class(es) to the elements to be animated

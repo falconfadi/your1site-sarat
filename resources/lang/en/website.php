@@ -17,7 +17,7 @@ return [
 		'learn_more' => 'Learn More',
 		'get_started' => 'Get Started',
 		'contact_us' => 'Contact Us',
-		'box_1_title' => 'Online Courses',
+		'box_1_title' => 'Training Courses',
 		'box_2_title' => 'Our Library',
 		'box_3_title' => 'Our Trainers',
 		'view_more' => 'View More',
@@ -117,7 +117,7 @@ return [
 		'message' => 'Message',
 		'box' => [
 			'title' => 'Join Our Courses',
-			'text' => 'Take the next step in your professional journey. Enroll today to gain unrestricted access to premium learning materials, expert-led instructional sessions, and industry-recognized certifications.',
+			'text' => 'Don\'t wait for the opportunity, create it. Get the tools for leadership and professional excellence through our training programs and interactive workshops. Book your seat and start your journey toward leadership.',
 			'address_label' => 'Address:',
 			'phone_label' => 'Phone:',
 			'email_label' => 'Email:',
@@ -129,7 +129,7 @@ return [
 		'read_more' => 'Read More',
 
 		// Post 1
-		'post_1_title' => 'Why Do You Need a Professional Qualification?',
+		'post_1_title' => 'Why you should become a leader?',
 		'post_1_text' => 'In today\'s competitive job market, academic certificates unlock career advancements and build formal credibility. Discover how structured training validates your expertise and elevates your professional value.',
 
 		// Post 2
@@ -141,7 +141,7 @@ return [
 		'post_3_text' => 'Our specialized graduate tracks connect Trainees directly with industry mentors. Gain hands-on field experience, access strategic career networks, and accelerate your job market transition.',
 		'sidebar' => [
 			'archives' => 'Archives',
-			'latest_posts' => 'Latest Posts',
+			'latest_posts' => 'Latest News',
 			'tags' => 'Tags',
 			'by' => 'By',
 			'comments' => '{0} No Comments|{1} 1 Comment|[2,*] :count Comments',
@@ -154,7 +154,7 @@ return [
 			'arc_insights' => 'Choosing Your Path',
 
 			// Latest posts titles
-			'post_1_title' => 'Why Do You Need a Professional Qualification?',
+			'post_1_title' => 'Why you should become a leader?',
 			'post_2_title' => 'Top Tech Skills Demanded by Employers This Year',
 			'post_3_title' => 'How to Balance Full-Time Work with Online Learning',
 
@@ -172,7 +172,7 @@ return [
 		'hero_heading' => 'About Our Platform',
 		'hero_subheading' => 'Providing high-quality educational experiences to empower individuals and cultivate career-ready skills.',
 		'tagline' => 'Sarat Academy',
-		'mission_title' => 'Our Core Mission',
+		'mission_title' => 'About Sarat',
 		'mission_text_1' => 'We are dedicated to bridging the gap between passionate learners and world-class industry experts, delivering accessible, comprehensive training for Trainees.',
 		'mission_text_2' => 'Whether you are starting a new career path, mastering digital tools, or seeking academic qualifications, our ecosystem offers flexible online and on-campus programs to help you study at your own pace.',
 		'quote' => 'Education is the ultimate catalyst for personal and professional transformation.',

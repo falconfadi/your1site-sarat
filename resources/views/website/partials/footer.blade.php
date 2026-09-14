@@ -28,15 +28,14 @@
 		<!-- Footer Content -->
 		<div class="footer_content ">
 		    <div class="row">
-		        <div class="col-lg-3 footer_col">
+				<div class="col-lg-3 footer_col -translate-y-16">
 		            <!-- Logo -->
-		            <div class="logo_containerx">
-		                <div class="logox">
+		            <div class="">
+		                <div class="">
 		                    <img src="{{asset('website/logo/Asset 10.png')}}" alt="Logo" class="h-32 w-72">
-		                    {{-- <span>{{ __('website.footer.logo_text') }}</span> --}}
 		                </div>
 		            </div>
-		            <p class="footer_about_textx">
+		            <p class="footer_about_textx mt-12">
 		                {{ __('website.footer.about_text') }}
 		            </p>
 		        </div>
@@ -71,15 +70,24 @@
 		            <div class="footer_column_title">{{ __('website.footer.contact_title') }}</div>
 		            <div class="footer_column_content">
 		                <ul>
-		                    <li class="footer_contact_item">
+							<li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
-		                            <img src="{{ asset('website/images/placeholder.svg') }}" class="svg h-6 w-6" alt="Address Icon">
+		                            <img src="{{ asset('website/images/smartphone.svg') }}" class="svg h-6 w-6" alt="Phone Icon">
 		                        </div>
-								<a href="http://www.google.com/maps?q=34.0646188,36.7465907&z=17&hl=en"
-								 target="_blank" rel="noopener noreferrer">
-									{{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
+								<a href="tel:{{ app_setting('phone','995365317') }}" 
+									target="_blank" rel="noopener noreferrer">
+									{{ app_setting('phone','00963995365317')}}
 								</a>
-		                    </li>
+		                    </li> 
+							<li class="footer_contact_item">
+		                        <div class="footer_contact_icon">
+		                            <img src="{{ asset('website/images/phone-call.svg') }}" class="svg h-6 w-6" alt="Phone Icon">
+		                        </div>
+								<a href="tel:{{ app_setting('landLine','995365317') }}" 
+									target="_blank" rel="noopener noreferrer">
+		                        	{{ app_setting('landLine','00963117875050') }}
+								</a>
+		                    </li>                   
 		                    <li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
 		                            <img src="{{ asset('website/images/envelope.svg') }}" class="svg h-6 w-6" alt="Email Icon">
@@ -88,24 +96,15 @@
 									{{ app_setting('email','info@sarat-sy.com')}}
 								</a>
 		                    </li>
-		                    <li class="footer_contact_item">
+							<li class="footer_contact_item">
 		                        <div class="footer_contact_icon">
-		                            <img src="{{ asset('website/images/smartphone.svg') }}" class="svg h-6 w-6" alt="Phone Icon">
+		                            <img src="{{ asset('website/images/placeholder.svg') }}" class="svg h-6 w-6" alt="Address Icon">
 		                        </div>
-								<a href="tel:{{ app_setting('phone','995365317') }}" 
-									target="_blank" rel="noopener noreferrer">
-									+{{ app_setting('phone','995365317')}}
+								<a href="http://www.google.com/maps?q=34.0646188,36.7465907&z=17&hl=en"
+								 target="_blank" rel="noopener noreferrer">
+									{{app_setting('address','Syria - Rif Dimashq -  Deir Atiyah')}}
 								</a>
-		                    </li>
-		                    <li class="footer_contact_item">
-		                        <div class="footer_contact_icon">
-		                            <img src="{{ asset('website/images/phone-call.svg') }}" class="svg h-6 w-6" alt="Phone Icon">
-		                        </div>
-								<a href="tel:{{ app_setting('landLine','995365317') }}" 
-									target="_blank" rel="noopener noreferrer">
-		                        +{{ app_setting('landLine','117875050') }}
-								</a>
-		                    </li>
+		                    </li>		                    
 		                </ul>
 		            </div>
 		        </div>

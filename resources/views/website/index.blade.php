@@ -7,11 +7,12 @@
 <div class="home">
     <!-- Hero Slider -->
     <div class="hero_slider_container">
-        <div class="hero_slider owl-carousel">
+        <div class="hero_slider owl-carousel" 
+        style="background-image:url({{asset('website/images/slider_background.jpg')}})">
 
             <!-- Slide 1: General/Branding -->
             <div class="hero_slide">
-                <div class="hero_slide_background" style="background-image:url({{asset('website/images/slider_background.jpg')}})"></div>
+                
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
@@ -31,7 +32,7 @@
 
             <!-- Slide 2: Skill Building / Career -->
             <div class="hero_slide">
-                <div class="hero_slide_background" style="background-image:url({{asset('website/images/slider_background.jpg')}})"></div>
+                
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
@@ -51,7 +52,7 @@
 
             <!-- Slide 3: Community / Flexibility -->
             <div class="hero_slide">
-                <div class="hero_slide_background" style="background-image:url({{asset('website/images/slider_background.jpg')}})"></div>
+                
                 <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
                     <div class="hero_slide_content text-center">
                         <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
@@ -127,7 +128,7 @@
 </div>
 
 <!-- Popular Courses Section -->
-<div class="popular page_section">
+<div class="popular page_section -mt-32">
     <div class="container">
         <div class="row">
             <div class="col">

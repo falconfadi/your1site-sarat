@@ -42,11 +42,11 @@ final class DatabaseSeeder extends Seeder
             ],
             [
                 'name' => 'phone',
-                'value' => '963995365317',
+                'value' => '00963995365317',
             ],
             [
                 'name' => 'landLine',
-                'value' => '963117875050',
+                'value' => '00963117875050',
             ],
             [
                 'name' => 'social_whatsapp',

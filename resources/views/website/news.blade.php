@@ -33,31 +33,33 @@
 								<img src="{{ asset('website/images/news_1.jpg') }}" alt="News Image">
 							</div>
 							<div class="news_post_top d-flex flex-column flex-sm-row">
-								<div class="news_post_date_container">
-									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
-										<div>18</div>
-										<div>dec</div>
-									</div>
-								</div>
 								<div class="news_post_title_container">
 									<div class="news_post_title">
 										<a href="{{route('newsPost')}}">{{ __('website.news_page.post_1_title') }}</a>
 									</div>
-									<div class="news_post_meta">
-										<span class="news_post_author">
-											<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
-										</span>
+									<div class="mx-1 w-fit flex justify-between items-center gap-2">
+										<div>
+											<span class="news_post_author">
+												<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
+											</span>
+										</div>
 										<span>|</span>
-										<span class="news_post_comments">
-											<a href="#">{{ trans_choice('website.news_page.comments', 3, ['count' => 3]) }}</a>
-										</span>
+										<div>
+											<span class="news_post_comments">
+												<a href="#">{{ trans_choice('website.news_page.comments', 3, ['count' => 3]) }}</a>
+											</span>
+										</div>
+										<span>|</span>
+										<div class="flex items-center justify-center rounded-sm">
+											<div>{{now()->format('Y - Dd - M ')}}</div> 
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="news_post_text">
 								<p>{{ __('website.news_page.post_1_text') }}</p>
 							</div>
-							<div class="news_post_button text-center trans_200">
+							<div class="news_post_button text-center trans_200 rounded-sm">
 								<a href="{{route('newsPost')}}">{{ __('website.news_page.read_more') }}</a>
 							</div>
 						</div>
@@ -68,31 +70,33 @@
 								<img src="{{ asset('website/images/news_2.jpg') }}" alt="News Image">
 							</div>
 							<div class="news_post_top d-flex flex-column flex-sm-row">
-								<div class="news_post_date_container">
-									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
-										<div>18</div>
-										<div>dec</div>
-									</div>
-								</div>
 								<div class="news_post_title_container">
 									<div class="news_post_title">
 										<a href="{{route('newsPost')}}">{{ __('website.news_page.post_2_title') }}</a>
 									</div>
-									<div class="news_post_meta">
-										<span class="news_post_author">
-											<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
-										</span>
+									<div class="mx-1 w-fit flex justify-between items-center gap-2">
+										<div>
+											<span class="news_post_author">
+												<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
+											</span>
+										</div>
 										<span>|</span>
-										<span class="news_post_comments">
-											<a href="#">{{ trans_choice('website.news_page.comments', 3, ['count' => 3]) }}</a>
-										</span>
+										<div>
+											<span class="news_post_comments">
+												<a href="#">{{ trans_choice('website.news_page.comments', 3, ['count' => 3]) }}</a>
+											</span>
+										</div>
+										<span>|</span>
+										<div class="flex items-center justify-center rounded-sm">
+											<div>{{now()->format('Y - Dd - M ')}}</div> 
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="news_post_text">
 								<p>{{ __('website.news_page.post_2_text') }}</p>
 							</div>
-							<div class="news_post_button text-center trans_200">
+							<div class="news_post_button text-center trans_200 rounded-sm">
 								<a href="{{route('newsPost')}}">{{ __('website.news_page.read_more') }}</a>
 							</div>
 						</div>
@@ -103,31 +107,33 @@
 								<img src="{{ asset('website/images/news_3.jpg') }}" alt="News Image">
 							</div>
 							<div class="news_post_top d-flex flex-column flex-sm-row">
-								<div class="news_post_date_container">
-									<div class="news_post_date d-flex flex-column align-items-center justify-content-center">
-										<div>18</div>
-										<div>dec</div>
-									</div>
-								</div>
 								<div class="news_post_title_container">
 									<div class="news_post_title">
 										<a href="{{route('newsPost')}}">{{ __('website.news_page.post_3_title') }}</a>
 									</div>
-									<div class="news_post_meta">
-										<span class="news_post_author">
-											<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
-										</span>
+									<div class="mx-1 w-fit flex justify-between items-center gap-2">
+										<div>
+											<span class="news_post_author">
+												<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
+											</span>
+										</div>
 										<span>|</span>
-										<span class="news_post_comments">
-											<a href="#">{{ trans_choice('website.news_page.comments', 3, ['count' => 3]) }}</a>
-										</span>
+										<div>
+											<span class="news_post_comments">
+												<a href="#">{{ trans_choice('website.news_page.comments', 3, ['count' => 3]) }}</a>
+											</span>
+										</div>
+										<span>|</span>
+										<div class="flex items-center justify-center rounded-sm">
+											<div>{{now()->format('Y - Dd - M ')}}</div> 
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="news_post_text">
 								<p>{{ __('website.news_page.post_3_text') }}</p>
 							</div>
-							<div class="news_post_button text-center trans_200">
+							<div class="news_post_button text-center trans_200 rounded-sm">
 								<a href="{{route('newsPost')}}">{{ __('website.news_page.read_more') }}</a>
 							</div>
 						</div>
@@ -148,20 +154,6 @@
 				<div class="col-lg-4">
 					<div class="sidebar">
 
-						<!-- Archives Section -->
-						<div class="sidebar_section">
-							<div class="sidebar_section_title">
-								<h3>{{ __('website.news_page.sidebar.archives') }}</h3>
-							</div>
-							<ul class="sidebar_list">
-								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_design') }}</a></li>
-								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_knowledge') }}</a></li>
-								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_uncategorized') }}</a></li>
-								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_departments') }}</a></li>
-								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_insights') }}</a></li>
-							</ul>
-						</div>
-
 						<!-- Latest Posts Section -->
 						<div class="sidebar_section">
 							<div class="sidebar_section_title">
@@ -178,10 +170,18 @@
 									<div class="latest_post_title">
 										<a href="{{route('newsPost')}}">{{ __('website.news_page.sidebar.post_1_title') }}</a>
 									</div>
-									<div class="latest_post_meta">
-										<span class="latest_post_author"><a href="#">{{ __('website.news_page.sidebar.by') }} Christian Smith</a></span>
+									<div class="mx-1 w-fit flex justify-around items-center gap-2">
+										<div>
+											<span class="news_post_author">
+												<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
+											</span>
+										</div>
 										<span>|</span>
-										<span class="latest_post_comments"><a href="#">{{ trans_choice('sidebar.comments', 3, ['count' => 3]) }}</a></span>
+										<div>
+											<span class="news_post_comments">
+												<a href="#">{{ trans_choice('website.news_page.comments', 3, ['count' => 3]) }}</a>
+											</span>
+										</div>
 									</div>
 								</div>
 
@@ -193,10 +193,18 @@
 									<div class="latest_post_title">
 										<a href="{{route('newsPost')}}">{{ __('website.news_page.sidebar.post_2_title') }}</a>
 									</div>
-									<div class="latest_post_meta">
-										<span class="latest_post_author"><a href="#">{{ __('website.news_page.sidebar.by') }} Christian Smith</a></span>
+									<div class="mx-1 w-fit flex justify-around items-center gap-2">
+										<div>
+											<span class="news_post_author">
+												<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
+											</span>
+										</div>
 										<span>|</span>
-										<span class="latest_post_comments"><a href="#">{{ trans_choice('sidebar.comments', 0, ['count' => 0]) }}</a></span>
+										<div>
+											<span class="news_post_comments">
+												<a href="#">{{ trans_choice('website.news_page.comments', 0, ['count' => 0]) }}</a>
+											</span>
+										</div>
 									</div>
 								</div>
 
@@ -208,18 +216,40 @@
 									<div class="latest_post_title">
 										<a href="{{route('newsPost')}}">{{ __('website.news_page.sidebar.post_3_title') }}</a>
 									</div>
-									<div class="latest_post_meta">
-										<span class="latest_post_author"><a href="#">{{ __('website.news_page.sidebar.by') }} Christian Smith</a></span>
+									<div class="mx-1 w-fit flex justify-around items-center gap-2">
+										<div>
+											<span class="news_post_author">
+												<a href="#">{{ __('website.news_page.by') }} Christian Smith</a>
+											</span>
+										</div>
 										<span>|</span>
-										<span class="latest_post_comments"><a href="#">{{ trans_choice('sidebar.comments', 12, ['count' => 12]) }}</a></span>
+										<div>
+											<span class="news_post_comments">
+												<a href="#">{{ trans_choice('website.news_page.comments', 12, ['count' => 12]) }}</a>
+											</span>
+										</div>
 									</div>
 								</div>
 
 							</div>
 						</div>
 
+						<!-- Archives Section -->
+						{{-- <div class="sidebar_section">
+							<div class="sidebar_section_title">
+								<h3>{{ __('website.news_page.sidebar.archives') }}</h3>
+							</div>
+							<ul class="sidebar_list">
+								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_design') }}</a></li>
+								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_knowledge') }}</a></li>
+								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_uncategorized') }}</a></li>
+								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_departments') }}</a></li>
+								<li class="sidebar_list_item"><a href="#">{{ __('website.news_page.sidebar.arc_insights') }}</a></li>
+							</ul>
+						</div> --}}
+
 						<!-- Tags Section -->
-						<div class="sidebar_section">
+						{{-- <div class="sidebar_section">
 							<div class="sidebar_section_title">
 								<h3>{{ __('website.news_page.sidebar.tags') }}</h3>
 							</div>
@@ -231,7 +261,7 @@
 								<div class="tag"><a href="#">{{ __('website.news_page.sidebar.tag_school') }}</a></div>
 								<div class="tag"><a href="#">{{ __('website.news_page.sidebar.tag_graduate') }}</a></div>
 							</div>
-						</div>
+						</div> --}}
 
 					</div>
 				</div>

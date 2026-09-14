@@ -24,20 +24,20 @@
         <div class="grid lg:grid-cols-12 gap-8 items-stretch mb-24">
             <!-- Strategic Narrative Block -->
             <div class="lg:col-span-7 bg-gradient-to-r from-[#f47e52] to-[#f47e30] p-8 md:p-12 rounded-2xl border border-slate-800/60 shadow-xl flex flex-col justify-center">
-                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-6 flex items-center gap-3">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 flex items-center gap-3">
                     <span class="w-1 h-8 bg-white rounded-full"></span>
                     {{ __('website.about_page.mission_title') }}
                 </h2>
-                <p class="text-slate-100 leading-relaxed text-lg mb-2">
+                {{-- <p class="text-slate-100 leading-relaxed text-lg mb-2">
                     {{ __('website.about_page.mission_text_1') }}
                 </p>
                 <p class="text-slate-200 leading-relaxed text-lg">
                     {{ __('website.about_page.mission_text_2') }}
-                </p>
+                </p> --}}
             </div>
 
 
-            <div class="lg:col-span-5 bg-gradient-to-br from-sarat-primary/90 to-sarat-accent/90 p-8 md:p-10 rounded-2xl shadow-xl flex flex-col justify-between text-white relative overflow-hidden">
+            <div class="lg:col-span-5 bg-linear-to-br from-sarat-primary/90 to-sarat-accent/90 p-8 md:p-10 rounded-2xl shadow-xl flex flex-col justify-between text-white relative overflow-hidden">
                 <!-- Abstract Design Accent -->
                 <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full pointer-events-none"></div>
 
