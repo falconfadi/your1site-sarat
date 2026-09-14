@@ -26,21 +26,17 @@
 		</div>
 
 		<!-- Footer Content -->
-		<div class="footer_content ">
+		<div class="footer_content pt-4">
+			<div class="flex flex-col justify-center items-center mb-6">
+				<div class="">
+					<img src="{{asset('website/logo/Asset 10.png')}}" alt="Logo" class="h-32 w-72">
+				</div>
+				<p class="footer_about_textx mt-6">
+					{{ __('website.footer.about_text') }}
+				</p>
+			</div>
 		    <div class="row">
-				<div class="col-lg-3 footer_col -translate-y-16">
-		            <!-- Logo -->
-		            <div class="">
-		                <div class="">
-		                    <img src="{{asset('website/logo/Asset 10.png')}}" alt="Logo" class="h-32 w-72">
-		                </div>
-		            </div>
-		            <p class="footer_about_textx mt-12">
-		                {{ __('website.footer.about_text') }}
-		            </p>
-		        </div>
-
-		        <div class="col-lg-3 footer_col">
+		        <div class="col-lg-4 footer_col">
 		            <div class="footer_column_title">{{ __('website.footer.menu_title') }}</div>
 		            <div class="footer_column_content">
 		                <ul>
@@ -51,7 +47,7 @@
 		            </div>
 		        </div>
 
-		        <div class="col-lg-3 footer_col">
+		        <div class="col-lg-4 footer_col">
 		            <div class="footer_column_title">{{ __('website.footer.links_title') }}</div>
 		            <div class="footer_column_content">
 		                <ul>
@@ -66,7 +62,7 @@
 		            </div>
 		        </div>
 
-		        <div class="col-lg-3 footer_col">
+		        <div class="col-lg-4 footer_col">
 		            <div class="footer_column_title">{{ __('website.footer.contact_title') }}</div>
 		            <div class="footer_column_content">
 		                <ul>
