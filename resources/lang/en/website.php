@@ -7,6 +7,7 @@ return [
 	'contact' => 'Contact us',
 	'news' => 'News',
 	'about' => 'About us',
+	'languages' => 'Languages',
 	'hero' => [
 		'slide_1_title' => 'Empower Your Future with <span>Education</span> Today!',
 		'slide_1_subtitle' => 'Access world-class courses designed by industry experts.',
@@ -175,7 +176,7 @@ return [
 		'mission_title' => 'About Sarat',
 		'mission_text_1' => 'We are dedicated to bridging the gap between passionate learners and world-class industry experts, delivering accessible, comprehensive training for Trainees.',
 		'mission_text_2' => 'Whether you are starting a new career path, mastering digital tools, or seeking academic qualifications, our ecosystem offers flexible online and on-campus programs to help you study at your own pace.',
-		'quote' => 'Education is the ultimate catalyst for personal and professional transformation.',
+		'quote' => 'Sarat is a modern training platform that aims to prepare a generation of leaders by helping individuals gain and develop skills and increase the knowledge needed to succeed in the job market and personal life. It offers a variety of training programs delivered by a group of professional trainers using advanced methods that keep up with global developments, in addition to offering internationally recognized certificates.',
 		'features_title' => 'What Sets Us Apart',
 		'feature_faculty_title' => 'Exceptional Professors',
 		'feature_faculty_desc' => 'Learn directly from award-winning industry leaders, academic pioneers, and field professional experts.',

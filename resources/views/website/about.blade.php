@@ -41,8 +41,8 @@
                 <!-- Abstract Design Accent -->
                 <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full pointer-events-none"></div>
 
-                <div class="text-9xl opacity-30 text-black font-serif">“</div>
-                <p class="text-lg font-semibold relative z-10 mb-8 leading-snug">
+                <div class="text-8xl opacity-30 text-black font-serif">“</div>
+                <p class="text-md font-semibold relative z-10 mb-2 leading-snug">
                     {{ __('website.about_page.quote') }}
                 </p>
             </div>

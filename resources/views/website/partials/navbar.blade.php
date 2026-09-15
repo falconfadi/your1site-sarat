@@ -57,7 +57,7 @@
 							<button @click="langOpen = !langOpen" type="button"
 								class="flex items-center justify-center gap-x-1.5 rounded-lg px-2 py-2
 								text-sm font-semibold transition-all focus:outline-none bg-transparent border-none"
-								aria-expanded="true" aria-haspopup="true">
+								aria-expanded="true" aria-haspopup="true" title="{{ __('website.languages') }}">
 								<span class="flex justify-center items-center gap-2">
 									<span class="leading-none">
 										<i class="text-2xl text-zinc-100 hover:text-yellow-800 bi bi-globe-europe-africa"></i>
