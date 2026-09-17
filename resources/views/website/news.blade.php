@@ -141,13 +141,13 @@
 					</div>
 
 					<!-- Page Navigation -->
-					<div class="news_page_nav">
+					{{-- <div class="news_page_nav">
 						<ul>
 							<li class="active text-center trans_200"><a href="#">01</a></li>
 							<li class="text-center trans_200"><a href="#">02</a></li>
 							<li class="text-center trans_200"><a href="#">03</a></li>
 						</ul>
-					</div>
+					</div> --}}
 				</div>
 
 				<!-- Sidebar Column -->
@@ -157,7 +157,7 @@
 						<!-- Latest Posts Section -->
 						<div class="sidebar_section">
 							<div class="sidebar_section_title">
-								<h3>{{ __('website.news_page.sidebar.latest_posts') }}</h3>
+								<h3 class="text-3xl font-semibold">{{ __('website.news_page.sidebar.latest_posts') }}</h3>
 							</div>
 
 							<div class="latest_posts">

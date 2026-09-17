@@ -28,10 +28,10 @@
                     <span class="w-1 h-8 bg-white rounded-full"></span>
                     {{ __('website.about_page.mission_title') }}
                 </h2>
-                {{-- <p class="text-slate-100 leading-relaxed text-lg mb-2">
+                <p class="text-slate-100 leading-relaxed text-2xl mb-2">
                     {{ __('website.about_page.mission_text_1') }}
                 </p>
-                <p class="text-slate-200 leading-relaxed text-lg">
+                {{-- <p class="text-slate-200 leading-relaxed text-lg">
                     {{ __('website.about_page.mission_text_2') }}
                 </p> --}}
             </div>

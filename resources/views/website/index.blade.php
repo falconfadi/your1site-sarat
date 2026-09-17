@@ -8,7 +8,10 @@
     <!-- Hero Slider -->
     <div class="hero_slider_container">
         <div class="hero_slider owl-carousel" 
-        style="background-image:url({{asset('website/images/slider_background.jpg')}})">
+        style="
+            background-image:url({{asset('website/images/slider_background.png')}});
+            background-size:cover;
+        ">
 
             <!-- Slide 1: General/Branding -->
             <div class="hero_slide">
@@ -225,9 +228,9 @@
             <div class="col-lg-6 nopadding">
                 <div class="register_section d-flex flex-column align-items-center justify-content-center">
                     <div class="register_content text-center">
-                        <h1 class="register_title">
+                        {{-- <h1 class="register_title">
                             {!! __('website.register.promo_title') !!}
-                        </h1>
+                        </h1> --}}
                         <p class="register_text">
                             {{ __('website.register.promo_text') }}
                         </p>
@@ -242,7 +245,7 @@
             <div class="col-lg-6 nopadding">
                 <div class="search_section d-flex flex-column align-items-center justify-content-center">
                     <div class="search_background" style="background-image:url({{ asset('website/images/search_background.jpg') }});"></div>
-                    <div class="search_content text-center">
+                    {{-- <div class="search_content text-center">
                         <h1 class="search_title">{{ __('website.register.search_title') }}</h1>
 
                         <form id="search_form" class="search_form" action="{{ url('/courses/search') }}" method="GET">
@@ -274,7 +277,7 @@
                             </button>
                         </form>
 
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
