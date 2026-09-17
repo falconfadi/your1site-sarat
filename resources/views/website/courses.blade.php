@@ -30,6 +30,22 @@
 	            </div>
 	        </div>
 
+			<div class="row mt-4">
+				<div class="col-12">
+					<form action="post">
+						<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-center">
+							<input id="search" class="newsletter_emailx w-full h-9 
+							appearance-none ring ring-[#f47e52] rounded-r-lg px-2" 
+							 type="text" required="required" placeholder="{{ __('website.course_sec.search') }}">
+							<button id="newsletter_submit" type="submit"
+							class="newsletter_submit_btn trans_300" value="Submit">
+							{{ __('website.course_sec.search') }}
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
 			<div class="row course_boxes">
 				<!-- Course Item: Design -->
 	            <div class="col-lg-4 course_box">

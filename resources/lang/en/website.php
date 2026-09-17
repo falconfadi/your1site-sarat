@@ -89,6 +89,7 @@ return [
 		'html_desc' => 'Build a solid foundation in modern web development coding.',
 		'photoshop_title' => 'Advanced Photoshop Mastery Techniques',
 		'photoshop_desc' => 'Deep dive into professional photo editing and digital art.',
+		'search' => 'Search',
 	],
 	'testimonials' => [
 		'title' => 'What Our Trainees Say',
