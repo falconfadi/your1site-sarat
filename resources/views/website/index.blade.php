@@ -6,74 +6,67 @@
 <!-- Home -->
 <div class="home">
     <!-- Hero Slider -->
-    <div class="hero_slider_container">
-        <div class="hero_slider owl-carousel" 
-        style="
-            background-image:url({{asset('website/images/slider_background.png')}});
-            background-size:cover;
-        ">
+    {{-- <div class="hero_slider_container"> --}}
+        {{-- <div class="hero_slider owl-carousel bg-[url('{{asset('website/images/slider_background.webp')}}')] bg-cover"> 
 
             <!-- Slide 1: General/Branding -->
-            <div class="hero_slide">
-                
-                <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
-                    <div class="hero_slide_content text-center">
-                        <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="my-12 text-pretty  text-white font-bold">
+            <div class="hero_slide top-1/2 -translate-y-1/2 ">
+                <div class="">
+                    <div class="hero_slide_content ltr:text-left rtl:text-right backdrop-blur-sm bg-[#f47e52]/10 rounded-lg p-3">
+                        <h2 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
+                        class="my-6 text-pretty text-xl text-white font-bold">
                             {!! __('website.hero.slide_1_title') !!}
-                        </h1>
-                        <p class="my-12 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        </h2>
+                        <p class="my-6 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_1_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('teachers')}}" class="bg-[#f47e52] px-12 py-3 rounded-md flex text-3xl
-                            justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.learn_more') }}</a>
+                            <a href="{{route('teachers')}}" class="bg-[#f47e52] px-10 py-1 rounded-md flex text-xl
+                            justify-center items-center w-fit  text-white hover:bg-[#f47e52]">{{ __('website.hero.learn_more') }}</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 2: Skill Building / Career -->
-            <div class="hero_slide">
-                
-                <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
-                    <div class="hero_slide_content text-center">
-                        <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="my-12 text-pretty  text-white font-bold">
+            <div class="hero_slide top-1/2 -translate-y-1/2 ">
+                <div class="">
+                    <div class="hero_slide_content ltr:text-left rtl:text-right backdrop-blur-sm bg-[#f47e52]/10 rounded-lg p-3">
+                        <h2 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
+                        class="my-6 text-pretty text-xl text-white font-bold">
                             {!! __('website.hero.slide_2_title') !!}
-                        </h1>
-                        <p class="my-12 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        </h2>
+                        <p class="my-6 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_2_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('courses')}}" class="bg-[#f47e52] px-12 py-3 rounded-md flex text-3xl
-                            justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.get_started') }}</a>
+                            <a href="{{route('courses')}}" class="bg-[#f47e52] px-10 py-1 rounded-md flex text-xl
+                            justify-center items-center w-fit  text-white hover:bg-[#f47e52]">{{ __('website.hero.get_started') }}</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 3: Community / Flexibility -->
-            <div class="hero_slide">
-                
-                <div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
-                    <div class="hero_slide_content text-center">
-                        <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
-                        class="my-12 text-pretty  text-white font-bold">
+            <div class="hero_slide top-1/2 -translate-y-1/2 ">
+                <div class="">
+                    <div class="hero_slide_content ltr:text-left rtl:text-right backdrop-blur-sm bg-[#f47e52]/10 rounded-lg p-3">
+                        <h2 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
+                        class="my-6 text-pretty text-xl text-white font-bold">
                             {!! __('website.hero.slide_3_title') !!}
-                        </h1>
-                        <p class="my-12 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
+                        </h2>
+                        <p class="my-6 mt-4 text-2xl text-white font-semibold " data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2">
                             {{ __('website.hero.slide_3_subtitle') }}
                         </p>
                         <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
-                            <a href="{{route('contact')}}" class="bg-[#f47e52] px-12 py-3 rounded-md flex text-3xl
-                            justify-center items-center w-fit mx-auto text-white hover:bg-[#f47e52]">{{ __('website.hero.contact_us') }}</a>
+                            <a href="{{route('contact')}}" class="bg-[#f47e52] px-10 py-1 rounded-md flex text-xl
+                            justify-center items-center w-fit  text-white hover:bg-[#f47e52]">{{ __('website.hero.contact_us') }}</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </div> --}}
 
         {{-- <div class="hero_slider_left hero_slider_nav trans_200 rounded-full">
             <i class="bi bi-arrow-left text-3xl text-black"></i>
@@ -81,7 +74,82 @@
         <div class="hero_slider_right hero_slider_nav trans_200 rounded-full">
             <i class="bi bi-arrow-right text-3xl text-black"></i>
         </div> --}}
+    {{-- </div> --}}
+    
+    {{-- <div class="hero_slider_container w-full h-[65vh] sm:h-[75vh] md:h-[85vh] min-h-[500px] relative overflow-hidden"> --}}
+    <div class="hero_slider_container relative overflow-hidden">
+        <div class="hero_slider owl-carousel h-full bg-[url('{{asset('website/images/slider_background.webp')}}')] bg-cover bg-center"> 
+    
+            <!-- Slide 1: General/Branding -->
+            <div class="hero_slide h-full flex items-center ![direction:ltr]">
+                <div class="container mx-auto w-full flex justify-start">
+                    <div class="hero_slide_content w-full max-w-xl ltr:text-left rtl:text-right backdrop-blur-sm border bg-[#f47e52]/10 rounded-xl p-3 shadow-lg">
+                        <h2 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
+                            class="mb-3 text-pretty text-xl sm:text-2xl md:text-3xl text-white font-bold leading-tight">
+                            {!! __('website.hero.slide_1_title') !!}
+                        </h2>
+                        <p data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2"
+                           class="mb-6 text-sm sm:text-base md:text-lg text-white/90 font-medium leading-relaxed">
+                            {{ __('website.hero.slide_1_subtitle') }}
+                        </p>
+                        <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
+                            <a href="{{route('teachers')}}" 
+                               class="inline-flex justify-center items-center bg-[#f47e52] hover:bg-[#d6653b] px-6 py-2.5 sm:px-8 sm:py-3 rounded-md text-base sm:text-lg font-semibold text-white transition-colors duration-200 shadow-md">
+                                {{ __('website.hero.learn_more') }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Slide 2: Skill Building / Career -->
+            <div class="hero_slide h-full flex items-center ![direction:ltr]">
+                <div class="container mx-auto w-full flex justify-start">
+                    <div class="hero_slide_content w-full max-w-xl ltr:text-left rtl:text-right backdrop-blur-sm border bg-[#f47e52]/10 rounded-xl p-3 shadow-lg">
+                        <h2 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
+                            class="mb-3 text-pretty text-xl sm:text-2xl md:text-3xl text-white font-bold leading-tight">
+                            {!! __('website.hero.slide_2_title') !!}
+                        </h2>
+                        <p data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2"
+                           class="mb-6 text-sm sm:text-base md:text-lg text-white/90 font-medium leading-relaxed">
+                            {{ __('website.hero.slide_2_subtitle') }}
+                        </p>
+                        <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
+                            <a href="{{route('courses')}}" 
+                               class="inline-flex justify-center items-center bg-[#f47e52] hover:bg-[#d6653b] px-6 py-2.5 sm:px-8 sm:py-3 rounded-md text-base sm:text-lg font-semibold text-white transition-colors duration-200 shadow-md">
+                                {{ __('website.hero.get_started') }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Slide 3: Community / Flexibility -->
+            <div class="hero_slide h-full flex items-center ![direction:ltr]">
+                <div class="container mx-auto w-full flex justify-start">
+                    <div class="hero_slide_content w-full max-w-xl ltr:text-left rtl:text-right backdrop-blur-sm border bg-[#f47e52]/10 rounded-xl p-3 shadow-lg">
+                        <h2 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"
+                            class="mb-3 text-pretty text-xl sm:text-2xl md:text-3xl text-white font-bold leading-tight">
+                            {!! __('website.hero.slide_3_title') !!}
+                        </h2>
+                        <p data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.2"
+                           class="mb-6 text-sm sm:text-base md:text-lg text-white/90 font-medium leading-relaxed">
+                            {{ __('website.hero.slide_3_subtitle') }}
+                        </p>
+                        <div class="hero_button" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" data-delay-in="0.4">
+                            <a href="{{route('contact')}}" 
+                               class="inline-flex justify-center items-center bg-[#f47e52] hover:bg-[#d6653b] px-6 py-2.5 sm:px-8 sm:py-3 rounded-md text-base sm:text-lg font-semibold text-white transition-colors duration-200 shadow-md">
+                                {{ __('website.hero.contact_us') }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
     </div>
+    
+    
 </div>
 
 <div class="hero_boxes mt-20">
